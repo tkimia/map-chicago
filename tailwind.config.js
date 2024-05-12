@@ -1,5 +1,4 @@
 import ta from "tailwindcss-animate";
-
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
@@ -11,21 +10,6 @@ export default {
   ],
   prefix: "",
   theme: {
-    colors: {
-      primary: {
-        50: "#edf6ff",
-        100: "#d7e8ff",
-        200: "#b8d8ff",
-        300: "#87c1ff",
-        400: "#4e9eff",
-        500: "#2577ff",
-        600: "#0e54ff",
-        700: "#073eee",
-        800: "#0d32c0",
-        900: "#12329b",
-        950: "#101f5b",
-      },
-    },
     container: {
       center: true,
       padding: "2rem",
@@ -34,6 +18,46 @@ export default {
       },
     },
     extend: {
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
