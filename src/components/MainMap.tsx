@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import { Polyline } from "leaflet";
 import { boundaries } from "@/lib/data-loader";
 import { DEFAULT_STYLE } from "./map/constants";
+import AddressSearch from "./AddressSearch";
 
 export default function MainMap() {
   const { watch } = useUserChoices();
@@ -15,6 +16,7 @@ export default function MainMap() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      <AddressSearch />
       {selectedBoundary && (
         <GeoJSON
           key={boundaryLayer}
