@@ -10,6 +10,7 @@
         "shape_len": 42720.044405799999,
         "zip": "60647"
       },
+      "id": 60647,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -529,6 +530,7 @@
         "shape_len": 48103.782721299998,
         "zip": "60639"
       },
+      "id": 60639,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1109,6 +1111,7 @@
         "shape_len": 27288.609612299999,
         "zip": "60707"
       },
+      "id": 60707,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -1604,6 +1607,7 @@
         "shape_len": 42527.989678899998,
         "zip": "60622"
       },
+      "id": 60622,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2178,6 +2182,7 @@
         "shape_len": 47970.140153100001,
         "zip": "60651"
       },
+      "id": 60651,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2736,6 +2741,7 @@
         "shape_len": 34689.350630599998,
         "zip": "60611"
       },
+      "id": 60611,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -3424,6 +3430,7 @@
         "shape_len": 67710.646739200005,
         "zip": "60638"
       },
+      "id": 60638,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4148,6 +4155,7 @@
         "shape_len": 48187.949879599997,
         "zip": "60652"
       },
+      "id": 60652,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -4525,6 +4533,7 @@
         "shape_len": 33983.913306499999,
         "zip": "60626"
       },
+      "id": 60626,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5207,6 +5216,7 @@
         "shape_len": 38321.313769200002,
         "zip": "60615"
       },
+      "id": 60615,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -5902,6 +5912,7 @@
         "shape_len": 42299.920390800005,
         "zip": "60621"
       },
+      "id": 60621,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6464,6 +6475,7 @@
         "shape_len": 32075.5994211,
         "zip": "60645"
       },
+      "id": 60645,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6829,6 +6841,7 @@
         "shape_len": 59337.807439700002,
         "zip": "60643"
       },
+      "id": 60643,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7517,6 +7530,7 @@
         "shape_len": 27307.813836099998,
         "zip": "60660"
       },
+      "id": 60660,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -7998,6 +8012,7 @@
         "shape_len": 48985.871304100001,
         "zip": "60640"
       },
+      "id": 60640,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -8933,6 +8948,7 @@
         "shape_len": 50587.347380400002,
         "zip": "60614"
       },
+      "id": 60614,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9936,6 +9952,7 @@
         "shape_len": 68289.7515766,
         "zip": "60631"
       },
+      "id": 60631,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -11116,6 +11133,7 @@
         "shape_len": 62633.139820800003,
         "zip": "60646"
       },
+      "id": 60646,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12272,6 +12290,7 @@
         "shape_len": 83748.991989899994,
         "zip": "60628"
       },
+      "id": 60628,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13110,6 +13129,7 @@
         "shape_len": 42524.110477599999,
         "zip": "60625"
       },
+      "id": 60625,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -13625,6 +13645,7 @@
         "shape_len": 42682.982946900003,
         "zip": "60641"
       },
+      "id": 60641,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -14132,6 +14153,7 @@
         "shape_len": 45646.488027699997,
         "zip": "60657"
       },
+      "id": 60657,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -14886,6 +14908,7 @@
         "shape_len": 42448.2828439,
         "zip": "60636"
       },
+      "id": 60636,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -15388,6 +15411,7 @@
         "shape_len": 55092.863293100003,
         "zip": "60649"
       },
+      "id": 60649,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -16630,6 +16654,7 @@
         "shape_len": 102528.036078,
         "zip": "60617"
       },
+      "id": 60617,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -17840,6 +17865,7 @@
         "shape_len": 59703.2158155,
         "zip": "60633"
       },
+      "id": 60633,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -18109,6 +18135,7 @@
         "shape_len": 7175.0921676500002,
         "zip": "60643"
       },
+      "id": 60643,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -18217,6 +18244,7 @@
         "shape_len": 42663.196675699997,
         "zip": "60612"
       },
+      "id": 60612,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -18807,6 +18835,7 @@
         "shape_len": 12245.8084015,
         "zip": "60604"
       },
+      "id": 60604,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -18958,6 +18987,7 @@
         "shape_len": 40394.410007699997,
         "zip": "60624"
       },
+      "id": 60624,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -19467,6 +19497,7 @@
         "shape_len": 84430.973215899998,
         "zip": "60656"
       },
+      "id": 60656,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -21127,6 +21158,7 @@
         "shape_len": 40030.838529300003,
         "zip": "60644"
       },
+      "id": 60644,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -21595,6 +21627,7 @@
         "shape_len": 77392.322613199998,
         "zip": "60655"
       },
+      "id": 60655,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -22462,6 +22495,7 @@
         "shape_len": 13672.6822885,
         "zip": "60603"
       },
+      "id": 60603,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -22639,6 +22673,7 @@
         "shape_len": 37973.346105099998,
         "zip": "60605"
       },
+      "id": 60605,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -23438,6 +23473,7 @@
         "shape_len": 34316.361542799998,
         "zip": "60653"
       },
+      "id": 60653,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -24080,6 +24116,7 @@
         "shape_len": 58540.920412699998,
         "zip": "60609"
       },
+      "id": 60609,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -24798,6 +24835,7 @@
         "shape_len": 101876.553747,
         "zip": "60666"
       },
+      "id": 60666,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -25403,6 +25441,7 @@
         "shape_len": 47847.080382,
         "zip": "60618"
       },
+      "id": 60618,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -26038,6 +26077,7 @@
         "shape_len": 45823.5398375,
         "zip": "60616"
       },
+      "id": 60616,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -26819,6 +26859,7 @@
         "shape_len": 14448.174992599999,
         "zip": "60602"
       },
+      "id": 60602,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -27056,6 +27097,7 @@
         "shape_len": 19804.582108800001,
         "zip": "60601"
       },
+      "id": 60601,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -27373,6 +27415,7 @@
         "shape_len": 53169.217720200002,
         "zip": "60608"
       },
+      "id": 60608,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -28121,6 +28164,7 @@
         "shape_len": 39143.639517099997,
         "zip": "60607"
       },
+      "id": 60607,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -28614,6 +28658,7 @@
         "shape_len": 13132.5654896,
         "zip": "60661"
       },
+      "id": 60661,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -28867,6 +28912,7 @@
         "shape_len": 12040.440235399999,
         "zip": "60606"
       },
+      "id": 60606,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -29137,6 +29183,7 @@
         "shape_len": 28833.963757400004,
         "zip": "60827"
       },
+      "id": 60827,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -29367,6 +29414,7 @@
         "shape_len": 49198.940283199998,
         "zip": "60630"
       },
+      "id": 60630,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -30294,6 +30342,7 @@
         "shape_len": 31296.227144100001,
         "zip": "60642"
       },
+      "id": 60642,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -30775,6 +30824,7 @@
         "shape_len": 38931.526661199998,
         "zip": "60659"
       },
+      "id": 60659,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -31143,6 +31193,7 @@
         "shape_len": 7909.8904071099996,
         "zip": "60707"
       },
+      "id": 60707,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -31290,6 +31341,7 @@
         "shape_len": 77647.318006899994,
         "zip": "60634"
       },
+      "id": 60634,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -32359,6 +32411,7 @@
         "shape_len": 31196.320656399999,
         "zip": "60613"
       },
+      "id": 60613,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -32858,6 +32911,7 @@
         "shape_len": 24208.698878800002,
         "zip": "60610"
       },
+      "id": 60610,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -33212,6 +33266,7 @@
         "shape_len": 17119.698877499999,
         "zip": "60654"
       },
+      "id": 60654,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -33538,6 +33593,7 @@
         "shape_len": 63253.238668999998,
         "zip": "60632"
       },
+      "id": 60632,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -34175,6 +34231,7 @@
         "shape_len": 53406.915616799997,
         "zip": "60623"
       },
+      "id": 60623,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -34707,6 +34764,7 @@
         "shape_len": 58701.3253749,
         "zip": "60629"
       },
+      "id": 60629,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -35321,6 +35379,7 @@
         "shape_len": 58466.160297900002,
         "zip": "60620"
       },
+      "id": 60620,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -35922,6 +35981,7 @@
         "shape_len": 52377.854540799999,
         "zip": "60637"
       },
+      "id": 60637,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -36713,6 +36773,7 @@
         "shape_len": 53040.907077800002,
         "zip": "60619"
       },
+      "id": 60619,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [

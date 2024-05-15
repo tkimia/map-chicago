@@ -3,6 +3,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": 1,
       "properties": {
         "name": "Senate District 1",
         "slug": "senate-district-1",
@@ -181,6 +182,7 @@
     },
     {
       "type": "Feature",
+      "id": 2,
       "properties": {
         "name": "Senate District 2",
         "slug": "senate-district-2",
@@ -300,6 +302,7 @@
     },
     {
       "type": "Feature",
+      "id": 3,
       "properties": {
         "name": "Senate District 3",
         "slug": "senate-district-3",
@@ -477,6 +480,7 @@
     },
     {
       "type": "Feature",
+      "id": 4,
       "properties": {
         "name": "Senate District 4",
         "slug": "senate-district-4",
@@ -706,6 +710,7 @@
     },
     {
       "type": "Feature",
+      "id": 5,
       "properties": {
         "name": "Senate District 5",
         "slug": "senate-district-5",
@@ -845,6 +850,7 @@
     },
     {
       "type": "Feature",
+      "id": 6,
       "properties": {
         "name": "Senate District 6",
         "slug": "senate-district-6",
@@ -1016,6 +1022,7 @@
     },
     {
       "type": "Feature",
+      "id": 7,
       "properties": {
         "name": "Senate District 7",
         "slug": "senate-district-7",
@@ -1256,6 +1263,7 @@
     },
     {
       "type": "Feature",
+      "id": 8,
       "properties": {
         "name": "Senate District 8",
         "slug": "senate-district-8",
@@ -1505,6 +1513,7 @@
     },
     {
       "type": "Feature",
+      "id": 9,
       "properties": {
         "name": "Senate District 9",
         "slug": "senate-district-9",
@@ -1855,6 +1864,7 @@
     },
     {
       "type": "Feature",
+      "id": 10,
       "properties": {
         "name": "Senate District 10",
         "slug": "senate-district-10",
@@ -2099,6 +2109,7 @@
     },
     {
       "type": "Feature",
+      "id": 11,
       "properties": {
         "name": "Senate District 11",
         "slug": "senate-district-11",
@@ -2317,6 +2328,7 @@
     },
     {
       "type": "Feature",
+      "id": 12,
       "properties": {
         "name": "Senate District 12",
         "slug": "senate-district-12",
@@ -2449,6 +2461,7 @@
     },
     {
       "type": "Feature",
+      "id": 13,
       "properties": {
         "name": "Senate District 13",
         "slug": "senate-district-13",
@@ -2831,6 +2844,7 @@
     },
     {
       "type": "Feature",
+      "id": 14,
       "properties": {
         "name": "Senate District 14",
         "slug": "senate-district-14",
@@ -3062,6 +3076,7 @@
     },
     {
       "type": "Feature",
+      "id": 15,
       "properties": {
         "name": "Senate District 15",
         "slug": "senate-district-15",
@@ -3464,6 +3479,7 @@
     },
     {
       "type": "Feature",
+      "id": 16,
       "properties": {
         "name": "Senate District 16",
         "slug": "senate-district-16",
@@ -3676,6 +3692,7 @@
     },
     {
       "type": "Feature",
+      "id": 17,
       "properties": {
         "name": "Senate District 17",
         "slug": "senate-district-17",
@@ -4035,6 +4052,7 @@
     },
     {
       "type": "Feature",
+      "id": 18,
       "properties": {
         "name": "Senate District 18",
         "slug": "senate-district-18",
@@ -4247,6 +4265,7 @@
     },
     {
       "type": "Feature",
+      "id": 19,
       "properties": {
         "name": "Senate District 19",
         "slug": "senate-district-19",
@@ -4449,6 +4468,7 @@
     },
     {
       "type": "Feature",
+      "id": 20,
       "properties": {
         "name": "Senate District 20",
         "slug": "senate-district-20",
@@ -4586,6 +4606,7 @@
     },
     {
       "type": "Feature",
+      "id": 21,
       "properties": {
         "name": "Senate District 21",
         "slug": "senate-district-21",
@@ -5046,6 +5067,7 @@
     },
     {
       "type": "Feature",
+      "id": 22,
       "properties": {
         "name": "Senate District 22",
         "slug": "senate-district-22",
@@ -5321,6 +5343,7 @@
     },
     {
       "type": "Feature",
+      "id": 23,
       "properties": {
         "name": "Senate District 23",
         "slug": "senate-district-23",
@@ -5589,6 +5612,7 @@
     },
     {
       "type": "Feature",
+      "id": 24,
       "properties": {
         "name": "Senate District 24",
         "slug": "senate-district-24",
@@ -6041,6 +6065,7 @@
     },
     {
       "type": "Feature",
+      "id": 25,
       "properties": {
         "name": "Senate District 25",
         "slug": "senate-district-25",
@@ -6473,6 +6498,7 @@
     },
     {
       "type": "Feature",
+      "id": 26,
       "properties": {
         "name": "Senate District 26",
         "slug": "senate-district-26",
@@ -6874,6 +6900,7 @@
     },
     {
       "type": "Feature",
+      "id": 27,
       "properties": {
         "name": "Senate District 27",
         "slug": "senate-district-27",
@@ -7060,6 +7087,7 @@
     },
     {
       "type": "Feature",
+      "id": 28,
       "properties": {
         "name": "Senate District 28",
         "slug": "senate-district-28",
@@ -7339,6 +7367,7 @@
     },
     {
       "type": "Feature",
+      "id": 29,
       "properties": {
         "name": "Senate District 29",
         "slug": "senate-district-29",
@@ -8021,6 +8050,7 @@
     },
     {
       "type": "Feature",
+      "id": 30,
       "properties": {
         "name": "Senate District 30",
         "slug": "senate-district-30",
@@ -8445,6 +8475,7 @@
     },
     {
       "type": "Feature",
+      "id": 31,
       "properties": {
         "name": "Senate District 31",
         "slug": "senate-district-31",
@@ -8930,6 +8961,7 @@
     },
     {
       "type": "Feature",
+      "id": 32,
       "properties": {
         "name": "Senate District 32",
         "slug": "senate-district-32",
@@ -9316,6 +9348,7 @@
     },
     {
       "type": "Feature",
+      "id": 33,
       "properties": {
         "name": "Senate District 33",
         "slug": "senate-district-33",
@@ -9676,6 +9709,7 @@
     },
     {
       "type": "Feature",
+      "id": 34,
       "properties": {
         "name": "Senate District 34",
         "slug": "senate-district-34",
@@ -9990,6 +10024,7 @@
     },
     {
       "type": "Feature",
+      "id": 35,
       "properties": {
         "name": "Senate District 35",
         "slug": "senate-district-35",
@@ -10408,6 +10443,7 @@
     },
     {
       "type": "Feature",
+      "id": 36,
       "properties": {
         "name": "Senate District 36",
         "slug": "senate-district-36",
@@ -10624,6 +10660,7 @@
     },
     {
       "type": "Feature",
+      "id": 37,
       "properties": {
         "name": "Senate District 37",
         "slug": "senate-district-37",
@@ -11236,6 +11273,7 @@
     },
     {
       "type": "Feature",
+      "id": 38,
       "properties": {
         "name": "Senate District 38",
         "slug": "senate-district-38",
@@ -11711,6 +11749,7 @@
     },
     {
       "type": "Feature",
+      "id": 39,
       "properties": {
         "name": "Senate District 39",
         "slug": "senate-district-39",
@@ -11947,6 +11986,7 @@
     },
     {
       "type": "Feature",
+      "id": 40,
       "properties": {
         "name": "Senate District 40",
         "slug": "senate-district-40",
@@ -12285,6 +12325,7 @@
     },
     {
       "type": "Feature",
+      "id": 41,
       "properties": {
         "name": "Senate District 41",
         "slug": "senate-district-41",
@@ -12531,6 +12572,7 @@
     },
     {
       "type": "Feature",
+      "id": 42,
       "properties": {
         "name": "Senate District 42",
         "slug": "senate-district-42",
@@ -12908,6 +12950,7 @@
     },
     {
       "type": "Feature",
+      "id": 43,
       "properties": {
         "name": "Senate District 43",
         "slug": "senate-district-43",
@@ -13122,6 +13165,7 @@
     },
     {
       "type": "Feature",
+      "id": 44,
       "properties": {
         "name": "Senate District 44",
         "slug": "senate-district-44",
@@ -13770,6 +13814,7 @@
     },
     {
       "type": "Feature",
+      "id": 45,
       "properties": {
         "name": "Senate District 45",
         "slug": "senate-district-45",
@@ -14355,6 +14400,7 @@
     },
     {
       "type": "Feature",
+      "id": 46,
       "properties": {
         "name": "Senate District 46",
         "slug": "senate-district-46",
@@ -14854,6 +14900,7 @@
     },
     {
       "type": "Feature",
+      "id": 47,
       "properties": {
         "name": "Senate District 47",
         "slug": "senate-district-47",
@@ -16988,6 +17035,7 @@
     },
     {
       "type": "Feature",
+      "id": 48,
       "properties": {
         "name": "Senate District 48",
         "slug": "senate-district-48",
@@ -17795,6 +17843,7 @@
     },
     {
       "type": "Feature",
+      "id": 49,
       "properties": {
         "name": "Senate District 49",
         "slug": "senate-district-49",
@@ -17961,6 +18010,7 @@
     },
     {
       "type": "Feature",
+      "id": 50,
       "properties": {
         "name": "Senate District 50",
         "slug": "senate-district-50",
@@ -19273,6 +19323,7 @@
     },
     {
       "type": "Feature",
+      "id": 51,
       "properties": {
         "name": "Senate District 51",
         "slug": "senate-district-51",
@@ -20265,6 +20316,7 @@
     },
     {
       "type": "Feature",
+      "id": 52,
       "properties": {
         "name": "Senate District 52",
         "slug": "senate-district-52",
@@ -20504,6 +20556,7 @@
     },
     {
       "type": "Feature",
+      "id": 53,
       "properties": {
         "name": "Senate District 53",
         "slug": "senate-district-53",
@@ -21162,6 +21215,7 @@
     },
     {
       "type": "Feature",
+      "id": 54,
       "properties": {
         "name": "Senate District 54",
         "slug": "senate-district-54",
@@ -22398,6 +22452,7 @@
     },
     {
       "type": "Feature",
+      "id": 55,
       "properties": {
         "name": "Senate District 55",
         "slug": "senate-district-55",
@@ -22887,6 +22942,7 @@
     },
     {
       "type": "Feature",
+      "id": 56,
       "properties": {
         "name": "Senate District 56",
         "slug": "senate-district-56",
@@ -23278,6 +23334,7 @@
     },
     {
       "type": "Feature",
+      "id": 57,
       "properties": {
         "name": "Senate District 57",
         "slug": "senate-district-57",
@@ -23619,6 +23676,7 @@
     },
     {
       "type": "Feature",
+      "id": 58,
       "properties": {
         "name": "Senate District 58",
         "slug": "senate-district-58",
@@ -25011,6 +25069,7 @@
     },
     {
       "type": "Feature",
+      "id": 59,
       "properties": {
         "name": "Senate District 59",
         "slug": "senate-district-59",

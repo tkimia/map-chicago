@@ -8,6 +8,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": 11,
       "properties": {
         "Name": "District 1A",
         "description": "TARGET_DEV -177<br> TOTAL 137142"
@@ -2958,6 +2959,7 @@
     },
     {
       "type": "Feature",
+      "id": 12,
       "properties": {
         "Name": "District 1B",
         "description": "TARGET_DEV -12<br> TOTAL 137307"
@@ -4163,6 +4165,7 @@
     },
     {
       "type": "Feature",
+      "id": 21,
       "properties": {
         "Name": "District 2A",
         "description": "TARGET_DEV 512<br> TOTAL 137831"
@@ -5079,6 +5082,7 @@
     },
     {
       "type": "Feature",
+      "id": 22,
       "properties": {
         "Name": "District 2B",
         "description": "TARGET_DEV -34<br> TOTAL 137285"
@@ -5909,6 +5913,7 @@
     },
     {
       "type": "Feature",
+      "id": 31,
       "properties": {
         "Name": "District 3A",
         "description": "TARGET_DEV 134<br> TOTAL 137453"
@@ -6911,6 +6916,7 @@
     },
     {
       "type": "Feature",
+      "id": 32,
       "properties": {
         "Name": "District 3B",
         "description": "TARGET_DEV -230<br> TOTAL 137089"
@@ -7845,6 +7851,7 @@
     },
     {
       "type": "Feature",
+      "id": 41,
       "properties": {
         "Name": "District 4A",
         "description": "TARGET_DEV 334<br> TOTAL 137653"
@@ -8593,6 +8600,7 @@
     },
     {
       "type": "Feature",
+      "id": 42,
       "properties": {
         "Name": "District 4B",
         "description": "TARGET_DEV 434<br> TOTAL 137753"
@@ -9742,6 +9750,7 @@
     },
     {
       "type": "Feature",
+      "id": 51,
       "properties": {
         "Name": "District 5A",
         "description": "TARGET_DEV -589<br> TOTAL 136730"
@@ -11296,6 +11305,7 @@
     },
     {
       "type": "Feature",
+      "id": 52,
       "properties": {
         "Name": "District 5B",
         "description": "TARGET_DEV -241<br> TOTAL 137078"
@@ -12497,6 +12507,7 @@
     },
     {
       "type": "Feature",
+      "id": 61,
       "properties": {
         "Name": "District 6A",
         "description": "TARGET_DEV 548<br> TOTAL 137867"
@@ -13466,6 +13477,7 @@
     },
     {
       "type": "Feature",
+      "id": 62,
       "properties": {
         "Name": "District 6B",
         "description": "TARGET_DEV 131<br> TOTAL 137450"
@@ -14906,6 +14918,7 @@
     },
     {
       "type": "Feature",
+      "id": 71,
       "properties": {
         "Name": "District 7A",
         "description": "TARGET_DEV -255<br> TOTAL 137064"
@@ -16016,6 +16029,7 @@
     },
     {
       "type": "Feature",
+      "id": 72,
       "properties": {
         "Name": "District 7B",
         "description": "TARGET_DEV -176<br> TOTAL 137143"
@@ -17254,6 +17268,7 @@
     },
     {
       "type": "Feature",
+      "id": 81,
       "properties": {
         "Name": "District 8A",
         "description": "TARGET_DEV 352<br> TOTAL 137671"
@@ -18551,6 +18566,7 @@
     },
     {
       "type": "Feature",
+      "id": 82,
       "properties": {
         "Name": "District 8B",
         "description": "TARGET_DEV -77<br> TOTAL 137242"
@@ -20028,6 +20044,7 @@
     },
     {
       "type": "Feature",
+      "id": 91,
       "properties": {
         "Name": "District 9A",
         "description": "TARGET_DEV -802<br> TOTAL 136517"
@@ -21327,6 +21344,7 @@
     },
     {
       "type": "Feature",
+      "id": 92,
       "properties": {
         "Name": "District 9B",
         "description": "TARGET_DEV 191<br> TOTAL 137510"
@@ -22711,6 +22729,7 @@
     },
     {
       "type": "Feature",
+      "id": 101,
       "properties": {
         "Name": "District 10A",
         "description": "TARGET_DEV -575<br> TOTAL 136744"
@@ -24226,6 +24245,7 @@
     },
     {
       "type": "Feature",
+      "id": 102,
       "properties": {
         "Name": "District 10B",
         "description": "TARGET_DEV 540<br> TOTAL 137859"
