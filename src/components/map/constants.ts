@@ -1,4 +1,6 @@
-import { Layer, type PathOptions } from "leaflet";
+import { Layer, type PathOptions, type LatLngTuple } from "leaflet";
+
+export const CHICAGO_COORDINATES = [41.8781, -87.6298] as LatLngTuple;
 
 export const DEFAULT_STYLE: PathOptions = {
   opacity: 0.7,

@@ -2,6 +2,9 @@ import MainMap from "./components/MainMap";
 import UserChoiceForm from "./components/UserChoiceForm";
 import Sidebar from "./components/Sidebar";
 import UserChoiceOptions from "./components/UserChoiceOptions";
+import Radar from "radar-sdk-js";
+
+Radar.initialize(import.meta.env.VITE_RADAR_PUBLISHABLE_KEY);
 
 function App() {
   return (
