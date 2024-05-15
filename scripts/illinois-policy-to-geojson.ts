@@ -40,21 +40,23 @@ const data = JSON.parse(
   })
 ) as IllinoisPolicyData[];
 
-const features = data.map((d) => {
-  const feature: Feature = {
-    type: "Feature",
-    properties: {
-      name: d.name,
-      slug: d.slug,
-      person: d.person,
-    },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [[d.data.map((coord) => [coord.lng, coord.lat])]],
-    },
-  };
-  return feature;
-});
+const features = data
+  .filter((d) => d.data.length > 0)
+  .map((d) => {
+    const feature: Feature = {
+      type: "Feature",
+      properties: {
+        name: d.name,
+        slug: d.slug,
+        person: d.person,
+      },
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [[d.data.map((coord) => [coord.lng, coord.lat])]],
+      },
+    };
+    return feature;
+  });
 
 const result: FeatureCollection = {
   type: "FeatureCollection",
