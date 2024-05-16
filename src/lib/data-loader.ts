@@ -3,6 +3,7 @@ import zipCodesData from "../assets/chicago-zip-codes.json";
 import illinoisHouseData from "../assets/illinois-house.json";
 import stateSenateData from "../assets/illinois-senate.json";
 import chicagoPoliceBeatData from "../assets/chicago-police-beats.json";
+import chicagoSchoolBoard from "../assets/chicago-school-board.json";
 
 import { type Feature, type FeatureCollection } from "geojson";
 
@@ -23,6 +24,10 @@ export const boundaries: Record<string, MapConfig> = {
   "Chicago Police Beats": {
     data: chicagoPoliceBeatData as FeatureCollection,
     getTooltip: (feature) => feature.properties?.beat_num,
+  },
+  "Chicago School Board": {
+    data: chicagoSchoolBoard as FeatureCollection,
+    getTooltip: (feature) => feature.properties?.Name,
   },
   Wards: {
     data: wardsData as FeatureCollection,
