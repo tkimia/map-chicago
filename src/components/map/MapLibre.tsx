@@ -48,7 +48,12 @@ export default function MainMap() {
                 1,
                 0.5,
               ],
-              "fill-color": DEFAULT_STYLE.fillColor,
+              "fill-color": [
+                "case",
+                ["boolean", ["feature-state", "clicked"], false],
+                "yellow",
+                DEFAULT_STYLE.fillColor,
+              ],
             }}
           />
         </Source>
@@ -58,7 +63,8 @@ export default function MainMap() {
           className="absolute m-2 p-1 bg-black/60 text-white z-10 pointer-events-none"
           style={{ left: mousePoint.x, top: mousePoint.y }}
         >
-          {JSON.stringify(hoveredFeature.properties)}
+          {boundaryLayer &&
+            boundaries[boundaryLayer].getTooltip(hoveredFeature)}
         </div>
       )}
     </Map>

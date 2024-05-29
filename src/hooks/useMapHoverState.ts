@@ -11,7 +11,34 @@ export default function useMapHoverState(opts: {
 }) {
   const [hoveredFeature, setHoveredFeature] =
     useState<MapGeoJSONFeature | null>(null);
+
+  const [clickedFeature, setClickedFeature] =
+    useState<MapGeoJSONFeature | null>(null);
+
   const [point, setPoint] = useState<Point | null>(null);
+
+  const onClick = (e: MapLayerMouseEvent) => {
+    if (!e.features?.length) return;
+    const map = e.target;
+    if (clickedFeature) {
+      map.setFeatureState(
+        { source: opts.sourceId, id: clickedFeature.id as string },
+        { clicked: false }
+      );
+    }
+
+    const clicked = e.features[0];
+    setClickedFeature(clicked);
+    map.setFeatureState(
+      { source: opts.sourceId, id: clicked.id as string },
+      { clicked: true }
+    );
+
+    if (hoveredFeature === clicked) {
+      setHoveredFeature(null);
+    }
+  };
+
   const onMouseMove = (e: MapLayerMouseEvent) => {
     if (!e.features?.length) return;
     const map = e.target;
@@ -38,10 +65,12 @@ export default function useMapHoverState(opts: {
   };
   return {
     hoveredFeature,
+    clickedFeature,
     mousePoint: point,
     events: {
       onMouseMove,
       onMouseLeave,
+      onClick,
     },
   };
 }
