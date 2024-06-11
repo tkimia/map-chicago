@@ -5,36 +5,43 @@ import stateSenateData from "../assets/illinois-senate.json";
 import chicagoPoliceDistrictData from "../assets/chicago-police-districts.json";
 import chicagoSchoolBoard from "../assets/chicago-school-board.json";
 
-import { type Feature, type FeatureCollection } from "geojson";
+import {
+  MultiPolygon,
+  Polygon,
+  type Feature,
+  type FeatureCollection,
+} from "geojson";
 
 type MapConfig = {
-  data: FeatureCollection;
+  data: FeatureCollection<MultiPolygon | Polygon>;
   getTooltip: (feature: Feature) => string;
 };
 
 export const boundaries: Record<string, MapConfig> = {
   "Illinois House Districts": {
-    data: illinoisHouseData as FeatureCollection,
+    data: illinoisHouseData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.name,
   },
   "Illinois Senate Districts": {
-    data: stateSenateData as FeatureCollection,
+    data: stateSenateData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.name,
   },
   "Chicago Police Districts": {
-    data: chicagoPoliceDistrictData as FeatureCollection,
+    data: chicagoPoliceDistrictData as FeatureCollection<
+      MultiPolygon | Polygon
+    >,
     getTooltip: (feature) => feature.properties?.dist_label,
   },
   "Chicago School Board": {
-    data: chicagoSchoolBoard as FeatureCollection,
+    data: chicagoSchoolBoard as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.Name,
   },
   Wards: {
-    data: wardsData as FeatureCollection,
+    data: wardsData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => `Ward ${feature.properties?.ward}`,
   },
   "Zip Codes": {
-    data: zipCodesData as FeatureCollection,
+    data: zipCodesData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.zip,
   },
 };
