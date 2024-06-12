@@ -1,4 +1,4 @@
-import MainMap from "./components/map/MapLibre";
+import MainMap from "./components/MapLibre";
 import UserChoiceForm from "./components/UserChoiceForm";
 import Sidebar from "./components/Sidebar";
 import UserChoiceOptions from "./components/UserChoiceOptions";

@@ -2,12 +2,13 @@ import useUserChoices from "@/hooks/useUserChoices";
 import { boundaries } from "@/lib/data-loader";
 import Map, { Marker, Source, Layer } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { CHICAGO_COORDINATES, DEFAULT_STYLE } from "./constants";
-import AddressSearch from "../AddressSearch";
+import { CHICAGO_COORDINATES, DEFAULT_STYLE } from "../lib/constants";
+import AddressSearch from "./AddressSearch";
 import useMapHoverState from "@/hooks/useMapHoverState";
 import { useEffect } from "react";
 import { point } from "@turf/helpers";
 import booleanPointInPolygon from "@turf/boolean-point-in-polygon";
+import { CardScrollControl } from "./CardScrollControl";
 
 export default function MainMap() {
   const { watch } = useUserChoices();
@@ -81,6 +82,11 @@ export default function MainMap() {
         >
           {boundaryLayer &&
             boundaries[boundaryLayer].getTooltip(hoveredFeature)}
+        </div>
+      )}
+      {userAddress && (
+        <div className="absolute bottom-4 mx-auto w-11/12 left-1/2 transform -translate-x-1/2">
+          <CardScrollControl />
         </div>
       )}
     </Map>

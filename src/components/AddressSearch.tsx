@@ -1,7 +1,7 @@
 //import { Input } from "@/components/ui/input";
 import Radar from "radar-sdk-js";
 import { useEffect } from "react";
-import { CHICAGO_COORDINATES } from "./map/constants";
+import { CHICAGO_COORDINATES } from "../lib/constants";
 import React from "react";
 import useUserChoices from "@/hooks/useUserChoices";
 
