@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
+import { Feature } from "geojson";
 
 export function readJsonFile(filePath) {
   try {
@@ -19,4 +20,20 @@ export function writeJsonFile(filePath, data) {
     console.error(`Error writing file ${filePath}:`, error);
     process.exit(1);
   }
+}
+
+type PersonProperties = {
+  name?: string | null;
+  addresses: string[];
+  phoneNumbers: string[];
+  emails: string[];
+  image?: string | null;
+  twitterUrl?: string | null;
+};
+
+export function amendFeature(feature: Feature, properties: PersonProperties) {
+  feature.properties = {
+    ...feature.properties,
+    ...properties,
+  };
 }
