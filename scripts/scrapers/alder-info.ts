@@ -1,5 +1,5 @@
 import { JSDOM } from "jsdom";
-import { readJsonFile, writeJsonFile } from "./utils";
+import { amendFeature, readJsonFile, writeJsonFile } from "./utils";
 import { type FeatureCollection } from "geojson";
 
 const BASE_URL = "https://www.chicago.gov/city/en/about/wards/";
@@ -62,6 +62,7 @@ async function main() {
         }
       }
     );
+    amendFeature(feature, tableData);
     feature.properties = { ...feature.properties, ...tableData };
   }
   writeJsonFile("./src/assets/chicago-wards.json", wardData);

@@ -5,9 +5,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { CHICAGO_COORDINATES, DEFAULT_STYLE } from "../lib/constants";
 import AddressSearch from "./AddressSearch";
 import useMapHoverState from "@/hooks/useMapHoverState";
-import { useEffect } from "react";
-import { point } from "@turf/helpers";
-import booleanPointInPolygon from "@turf/boolean-point-in-polygon";
+
 import { CardScrollControl } from "./CardScrollControl";
 
 export default function MainMap() {
@@ -18,19 +16,6 @@ export default function MainMap() {
   });
   const { boundaryLayer, userAddress } = watch();
   const selectedBoundary = boundaryLayer ? boundaries[boundaryLayer] : null;
-
-  useEffect(() => {
-    if (userAddress) {
-      const latlong = point([userAddress.lng, userAddress.lat]);
-      for (const boundary of Object.values(boundaries)) {
-        const feature = boundary.data.features.find(
-          (f) => !!booleanPointInPolygon(latlong, f)
-        );
-        if (feature)
-          console.log(`User is in ${JSON.stringify(feature.properties)}`);
-      }
-    }
-  }, [userAddress]);
 
   return (
     <Map
