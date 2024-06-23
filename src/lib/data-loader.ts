@@ -12,7 +12,7 @@ import {
   type FeatureCollection,
 } from "geojson";
 
-type Boundary = {
+export type Boundary = {
   id:
     | "illinois-house"
     | "illinois-senate"

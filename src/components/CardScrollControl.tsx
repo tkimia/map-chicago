@@ -6,6 +6,7 @@ import booleanPointInPolygon from "@turf/boolean-point-in-polygon";
 import { FeatureCard } from "./FeatureCard";
 import { MapGeoJSONFeature, Map } from "maplibre-gl";
 import { useMap } from "react-map-gl/maplibre";
+import CardDetails from "./CardDetails";
 
 type Props = {
   onClickFeature: (map: Map, feature: MapGeoJSONFeature) => void;
@@ -66,15 +67,17 @@ export function CardScrollControl({ onClickFeature }: Props) {
               title={title}
               image={image}
               name={name}
-              className={boundaryLayer === id ? "border-2 border-blue-500" : ""}
+              className={boundaryLayer === id ? "border-blue-500" : ""}
               onClick={() => {
                 setValue("boundaryLayer", id);
                 if (map) {
-                  // ts-ignore
+                  // @ts-expect-error fake mismatch
                   onClickFeature(map, feature);
                 }
               }}
-            />
+            >
+              <CardDetails id={id} properties={feature.properties} />
+            </FeatureCard>
           );
         })}
       </div>
