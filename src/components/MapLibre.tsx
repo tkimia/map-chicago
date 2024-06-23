@@ -15,10 +15,11 @@ import { CardScrollControl } from "./CardScrollControl";
 
 export default function MainMap() {
   const { watch } = useUserChoices();
-  const { events, hoveredFeature, mousePoint } = useMapHoverState({
-    sourceId: MAIN_SOURCE,
-    layerId: MAIN_LAYER,
-  });
+  const { events, hoveredFeature, mousePoint, setClickedFeature } =
+    useMapHoverState({
+      sourceId: MAIN_SOURCE,
+      layerId: MAIN_LAYER,
+    });
   const { boundaryLayer, userAddress } = watch();
   const selectedBoundary =
     boundaries.find((b) => b.id === boundaryLayer) ?? null;
@@ -76,7 +77,7 @@ export default function MainMap() {
       )}
       {userAddress && (
         <div className="absolute bottom-4 mx-auto w-11/12 left-1/2 transform -translate-x-1/2">
-          <CardScrollControl />
+          <CardScrollControl onClickFeature={setClickedFeature} />
         </div>
       )}
     </Map>

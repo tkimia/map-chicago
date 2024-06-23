@@ -1,18 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 type Props = {
   title: string;
   image?: string;
   name?: string;
   onClick: () => void;
+  className?: string;
 };
 
 export function FeatureCard(props: Props) {
   return (
     <Card
-      className="bg-white shadow-md rounded-lg overflow-hidden transition-all ease-in-out duration-300 hover:shadow-xl cursor-pointer w-[350px]"
+      className={cn(
+        "bg-white shadow-md rounded-lg overflow-hidden transition-shadow ease-in-out duration-300 hover:shadow-xl cursor-pointer w-[350px]",
+        props.className
+      )}
       onClick={props.onClick}
     >
       <CardContent className="flex flex-row items-center gap-4 p-4">

@@ -4,10 +4,17 @@ import useUserChoices from "@/hooks/useUserChoices";
 import { point } from "@turf/helpers";
 import booleanPointInPolygon from "@turf/boolean-point-in-polygon";
 import { FeatureCard } from "./FeatureCard";
+import { MapGeoJSONFeature, Map } from "maplibre-gl";
+import { useMap } from "react-map-gl/maplibre";
 
-export function CardScrollControl() {
+type Props = {
+  onClickFeature: (map: Map, feature: MapGeoJSONFeature) => void;
+};
+
+export function CardScrollControl({ onClickFeature }: Props) {
   const { watch, setValue } = useUserChoices();
-  const { userAddress } = watch();
+  const { userAddress, boundaryLayer } = watch();
+  const { current: map } = useMap();
 
   if (!userAddress) return null;
 
@@ -59,7 +66,14 @@ export function CardScrollControl() {
               title={title}
               image={image}
               name={name}
-              onClick={() => setValue("boundaryLayer", id)}
+              className={boundaryLayer === id ? "border-2 border-blue-500" : ""}
+              onClick={() => {
+                setValue("boundaryLayer", id);
+                if (map) {
+                  // ts-ignore
+                  onClickFeature(map, feature);
+                }
+              }}
             />
           );
         })}
