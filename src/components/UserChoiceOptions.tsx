@@ -18,15 +18,15 @@ export default function UserChoiceOptions() {
               defaultValue={field.value}
               className="flex flex-col space-y-1"
             >
-              {Object.keys(boundaries).map((key) => (
+              {boundaries.map((boundary) => (
                 <FormItem
-                  key={key}
+                  key={boundary.name}
                   className="flex items-center space-x-3 space-y-0"
                 >
                   <FormControl>
-                    <RadioGroupItem value={key} />
+                    <RadioGroupItem value={boundary.name} />
                   </FormControl>
-                  <FormLabel className="font-normal">{key}</FormLabel>
+                  <FormLabel className="font-normal">{boundary.name}</FormLabel>
                 </FormItem>
               ))}
             </RadioGroup>

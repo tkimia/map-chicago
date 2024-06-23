@@ -2,7 +2,12 @@ import useUserChoices from "@/hooks/useUserChoices";
 import { boundaries } from "@/lib/data-loader";
 import Map, { Marker, Source, Layer } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { CHICAGO_COORDINATES, DEFAULT_STYLE } from "../lib/constants";
+import {
+  CHICAGO_COORDINATES,
+  DEFAULT_STYLE,
+  MAIN_LAYER,
+  MAIN_SOURCE,
+} from "../lib/constants";
 import AddressSearch from "./AddressSearch";
 import useMapHoverState from "@/hooks/useMapHoverState";
 
@@ -11,11 +16,12 @@ import { CardScrollControl } from "./CardScrollControl";
 export default function MainMap() {
   const { watch } = useUserChoices();
   const { events, hoveredFeature, mousePoint } = useMapHoverState({
-    sourceId: "boundaries",
-    layerId: "active-boundary",
+    sourceId: MAIN_SOURCE,
+    layerId: MAIN_LAYER,
   });
   const { boundaryLayer, userAddress } = watch();
-  const selectedBoundary = boundaryLayer ? boundaries[boundaryLayer] : null;
+  const selectedBoundary =
+    boundaries.find((b) => b.id === boundaryLayer) ?? null;
 
   return (
     <Map
@@ -25,7 +31,7 @@ export default function MainMap() {
         zoom: 11,
       }}
       mapStyle={"gl-style/style.json"}
-      interactiveLayerIds={["active-boundary"]}
+      interactiveLayerIds={[MAIN_LAYER]}
       {...events}
     >
       <AddressSearch />
@@ -37,10 +43,10 @@ export default function MainMap() {
         />
       )}
       {selectedBoundary && (
-        <Source id="boundaries" type="geojson" data={selectedBoundary.data}>
+        <Source id={MAIN_SOURCE} type="geojson" data={selectedBoundary.data}>
           <Layer
-            source="boundaries"
-            id="active-boundary"
+            source={MAIN_SOURCE}
+            id={MAIN_LAYER}
             type="fill"
             paint={{
               "fill-outline-color": "white",
@@ -65,8 +71,7 @@ export default function MainMap() {
           className="absolute m-2 p-1 bg-black/60 text-white z-10 pointer-events-none"
           style={{ left: mousePoint.x, top: mousePoint.y }}
         >
-          {boundaryLayer &&
-            boundaries[boundaryLayer].getTooltip(hoveredFeature)}
+          {selectedBoundary && selectedBoundary.getTooltip(hoveredFeature)}
         </div>
       )}
       {userAddress && (

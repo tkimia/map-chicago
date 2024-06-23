@@ -12,36 +12,56 @@ import {
   type FeatureCollection,
 } from "geojson";
 
-type MapConfig = {
+type Boundary = {
+  id:
+    | "illinois-house"
+    | "illinois-senate"
+    | "chicago-police"
+    | "chicago-school"
+    | "wards"
+    | "zip-codes";
+  name: string;
   data: FeatureCollection<MultiPolygon | Polygon>;
   getTooltip: (feature: Feature) => string;
 };
 
-export const boundaries: Record<string, MapConfig> = {
-  "Illinois House Districts": {
+export const boundaries: Boundary[] = [
+  {
+    id: "illinois-house",
+    name: "Illinois House Districts",
     data: illinoisHouseData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.name,
   },
-  "Illinois Senate Districts": {
+  {
+    id: "illinois-senate",
+    name: "Illinois Senate Districts",
     data: stateSenateData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.name,
   },
-  "Chicago Police Districts": {
+  {
+    id: "chicago-police",
+    name: "Chicago Police Districts",
     data: chicagoPoliceDistrictData as FeatureCollection<
       MultiPolygon | Polygon
     >,
     getTooltip: (feature) => feature.properties?.dist_label,
   },
-  "Chicago School Board": {
+  {
+    id: "chicago-school",
+    name: "Chicago School Board",
     data: chicagoSchoolBoard as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.Name,
   },
-  Wards: {
+  {
+    id: "wards",
+    name: "Wards",
     data: wardsData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => `Ward ${feature.properties?.ward}`,
   },
-  "Zip Codes": {
+  {
+    id: "zip-codes",
+    name: "Zip Codes",
     data: zipCodesData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => feature.properties?.zip,
   },
-};
+];
