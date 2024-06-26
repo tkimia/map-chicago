@@ -9,6 +9,7 @@ export const UserChoice = z.object({
       tooltip: z.string().optional(),
     })
     .optional(),
+  isExploreMode: z.boolean().default(false),
 });
 
 export type UserChoice = z.infer<typeof UserChoice>;

@@ -1,6 +1,12 @@
 import useUserChoices from "@/hooks/useUserChoices";
 import { boundaries } from "@/lib/data-loader";
-import Map, { Marker, Source, Layer } from "react-map-gl/maplibre";
+import Map, {
+  Marker,
+  Source,
+  Layer,
+  GeolocateControl,
+  FullscreenControl,
+} from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import {
   CHICAGO_COORDINATES,
@@ -12,15 +18,17 @@ import AddressSearch from "./AddressSearch";
 import useMapHoverState from "@/hooks/useMapHoverState";
 
 import { CardScrollControl } from "./CardScrollControl";
+import IntroScreen from "./IntroScreen";
+import { ExploreScrollControl } from "./ExploreScrollControl";
 
 export default function MainMap() {
-  const { watch } = useUserChoices();
+  const { watch, setValue } = useUserChoices();
   const { events, hoveredFeature, mousePoint, setClickedFeature } =
     useMapHoverState({
       sourceId: MAIN_SOURCE,
       layerId: MAIN_LAYER,
     });
-  const { boundaryLayer, userAddress } = watch();
+  const { boundaryLayer, userAddress, isExploreMode } = watch();
   const selectedBoundary =
     boundaries.find((b) => b.id === boundaryLayer) ?? null;
 
@@ -35,7 +43,19 @@ export default function MainMap() {
       interactiveLayerIds={[MAIN_LAYER]}
       {...events}
     >
+      {!userAddress && !isExploreMode && <IntroScreen />}
       <AddressSearch />
+      <GeolocateControl
+        showUserLocation={false}
+        onGeolocate={(e) => {
+          setValue("userAddress", {
+            lat: e.coords.latitude,
+            lng: e.coords.longitude,
+            tooltip: "Your location",
+          });
+        }}
+      />
+      <FullscreenControl />
       {userAddress && (
         <Marker
           longitude={userAddress.lng}
@@ -75,11 +95,13 @@ export default function MainMap() {
           {selectedBoundary && selectedBoundary.getTooltip(hoveredFeature)}
         </div>
       )}
-      {userAddress && (
-        <div className="absolute bottom-4 mx-auto w-11/12 left-1/2 transform -translate-x-1/2">
+
+      <div className="absolute bottom-4 mx-auto w-11/12 left-1/2 transform -translate-x-1/2">
+        {userAddress && (
           <CardScrollControl onClickFeature={setClickedFeature} />
-        </div>
-      )}
+        )}
+        {isExploreMode && <ExploreScrollControl />}
+      </div>
     </Map>
   );
 }

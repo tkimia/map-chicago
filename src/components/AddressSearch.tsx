@@ -5,6 +5,7 @@ import { CHICAGO_COORDINATES } from "../lib/constants";
 import React from "react";
 import useUserChoices from "@/hooks/useUserChoices";
 import { useMap } from "react-map-gl/maplibre";
+import { cn } from "@/lib/utils";
 
 type RadarAddress = {
   latitude: number;
@@ -13,7 +14,11 @@ type RadarAddress = {
   addressLabel: string;
 };
 
-export default function AddressSearch() {
+type Props = {
+  className?: string;
+};
+
+export default function AddressSearch({ className }: Props) {
   const ref = React.useRef<HTMLDivElement | null>(null);
   const { setValue } = useUserChoices();
   const { current: map } = useMap();
@@ -33,6 +38,7 @@ export default function AddressSearch() {
             lng: selection.longitude,
             tooltip: selection.addressLabel,
           });
+          setValue("isExploreMode", false);
         },
       });
     }
@@ -42,7 +48,7 @@ export default function AddressSearch() {
     <div
       ref={ref}
       id="search-address"
-      className="absolute top-4 z-[999] w-11/12 mx-14"
+      className={cn("absolute top-4 left-8 right-24 z-[999] mx-14", className)}
     />
   );
 }
