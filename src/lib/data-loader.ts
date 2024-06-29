@@ -1,5 +1,4 @@
 import wardsData from "../assets/chicago-wards.json";
-import zipCodesData from "../assets/chicago-zip-codes.json";
 import illinoisHouseData from "../assets/illinois-house.json";
 import stateSenateData from "../assets/illinois-senate.json";
 import chicagoPoliceDistrictData from "../assets/chicago-police-districts.json";
@@ -18,8 +17,7 @@ export type Boundary = {
     | "illinois-senate"
     | "chicago-police"
     | "chicago-school"
-    | "wards"
-    | "zip-codes";
+    | "wards";
   name: string;
   data: FeatureCollection<MultiPolygon | Polygon>;
   getTooltip: (feature: Feature) => string;
@@ -57,11 +55,5 @@ export const boundaries: Boundary[] = [
     name: "Wards",
     data: wardsData as FeatureCollection<MultiPolygon | Polygon>,
     getTooltip: (feature) => `Ward ${feature.properties?.ward}`,
-  },
-  {
-    id: "zip-codes",
-    name: "Zip Codes",
-    data: zipCodesData as FeatureCollection<MultiPolygon | Polygon>,
-    getTooltip: (feature) => feature.properties?.zip,
   },
 ];

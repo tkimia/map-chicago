@@ -41,9 +41,6 @@ export function FeatureCard({
     case "chicago-school":
       title = properties?.Name;
       break;
-    case "zip-codes":
-      title = properties?.zip;
-      break;
     case "illinois-house":
     case "illinois-senate":
       title = properties?.name;
