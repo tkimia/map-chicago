@@ -24,9 +24,9 @@ export function writeJsonFile(filePath, data) {
 
 type PersonProperties = {
   name?: string | null;
-  addresses: string[];
-  phoneNumbers: string[];
-  emails: string[];
+  address: string | null;
+  phone: string | null;
+  email: string | null;
   image?: string | null;
   twitterUrl?: string | null;
 };

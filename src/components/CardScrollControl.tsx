@@ -6,7 +6,6 @@ import booleanPointInPolygon from "@turf/boolean-point-in-polygon";
 import { FeatureCard } from "./FeatureCard";
 import { MapGeoJSONFeature, Map } from "maplibre-gl";
 import { useMap } from "react-map-gl/maplibre";
-import CardDetails from "./CardDetails";
 
 type Props = {
   onClickFeature: (map: Map, feature: MapGeoJSONFeature) => void;
@@ -36,37 +35,11 @@ export function CardScrollControl({ onClickFeature }: Props) {
       <div className="flex w-max space-x-4 p-4">
         {intersections.map(({ id, name: boundaryName, feature }) => {
           if (!feature) return null;
-          let title: string;
-          let image = feature.properties?.image;
-          let name = feature.properties?.name;
-          switch (id) {
-            case "wards":
-              title = `Ward ${feature.properties?.ward}`;
-              break;
-            case "chicago-police":
-              title = `${feature.properties?.dist_label?.toLowerCase()} District`;
-              image = feature.properties?.image ?? "";
-              break;
-            case "chicago-school":
-              title = feature.properties?.Name;
-              break;
-            case "zip-codes":
-              title = feature.properties?.zip;
-              break;
-            case "illinois-house":
-            case "illinois-senate":
-              title = feature.properties?.name;
-              image = feature.properties?.person.image ?? "";
-              name = feature.properties?.person.name;
-              break;
-          }
-
           return (
             <FeatureCard
               key={boundaryName}
-              title={title}
-              image={image}
-              name={name}
+              type={id}
+              properties={feature.properties}
               className={boundaryLayer === id ? "border-blue-500" : ""}
               onClick={() => {
                 setValue("boundaryLayer", id);
@@ -75,9 +48,7 @@ export function CardScrollControl({ onClickFeature }: Props) {
                   onClickFeature(map, feature);
                 }
               }}
-            >
-              <CardDetails id={id} properties={feature.properties} />
-            </FeatureCard>
+            />
           );
         })}
       </div>

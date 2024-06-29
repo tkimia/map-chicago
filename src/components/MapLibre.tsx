@@ -20,6 +20,7 @@ import useMapHoverState from "@/hooks/useMapHoverState";
 import { CardScrollControl } from "./CardScrollControl";
 import IntroScreen from "./IntroScreen";
 import { ExploreScrollControl } from "./ExploreScrollControl";
+import { FeatureCard } from "./FeatureCard";
 
 export default function MainMap() {
   const { watch, setValue } = useUserChoices();
@@ -87,20 +88,21 @@ export default function MainMap() {
           />
         </Source>
       )}
-      {hoveredFeature && mousePoint && (
-        <div
-          className="absolute m-2 p-1 bg-black/60 text-white z-10 pointer-events-none"
+      {selectedBoundary && hoveredFeature && mousePoint && (
+        <FeatureCard
+          type={selectedBoundary.id}
+          properties={hoveredFeature.properties}
+          className="absolute z-10 pointer-events-none border-none"
           style={{ left: mousePoint.x, top: mousePoint.y }}
-        >
-          {selectedBoundary && selectedBoundary.getTooltip(hoveredFeature)}
-        </div>
+          variant="dark"
+        />
       )}
 
       <div className="absolute bottom-4 mx-auto w-11/12 left-1/2 transform -translate-x-1/2">
         {userAddress && (
           <CardScrollControl onClickFeature={setClickedFeature} />
         )}
-        {isExploreMode && <ExploreScrollControl />}
+        {isExploreMode && !userAddress && <ExploreScrollControl />}
       </div>
     </Map>
   );

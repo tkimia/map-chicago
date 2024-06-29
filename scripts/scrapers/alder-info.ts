@@ -26,9 +26,9 @@ async function main() {
     2;
     const tableData = {
       name,
-      addresses: [] as string[],
-      phoneNumbers: [] as string[],
-      emails: [] as string[],
+      address: null as string | null,
+      phone: null as string | null,
+      email: null as string | null,
       image: `${IMAGE_PATH}/${ward}.jpg`,
     };
     Array.from(document.querySelectorAll(".page-description tr")).forEach(
@@ -44,14 +44,14 @@ async function main() {
 
         switch (key) {
           case "email":
-            tableData.emails.push(value);
+            tableData.email = tableData.email ?? value;
             break;
           case "ward office":
-            tableData.addresses.push(value);
+            tableData.address = tableData.address ?? value;
             break;
           case "phone": {
             const values = value.split(/\s/);
-            tableData.phoneNumbers = values.map((v) => v.replace(/\D/g, ""));
+            tableData.phone = tableData.phone ?? values[0].replace(/\D/g, "");
             break;
           }
           case "fax":

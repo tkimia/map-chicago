@@ -55,9 +55,9 @@ async function main() {
 
     amendFeature(featureToAmend, {
       name,
-      addresses: address ? [address] : [],
-      phoneNumbers: phone ? [phone] : [],
-      emails: email ? [email] : [],
+      address: address || null,
+      phone: phone || null,
+      email: email || null,
       image: imgUrl,
       twitterUrl,
     });

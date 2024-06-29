@@ -8,11 +8,11 @@
         "dist_label": "17TH",
         "dist_num": "17",
         "name": "Jesse Alvarez",
-        "addresses": ["4650 North Pulaski Rd, Chicago, IL 60630"],
-        "phoneNumbers": ["312-742-4410"],
-        "emails": ["CAPS.017District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Jesse-Alvarez-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS17"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS17",
+        "address": "4650 North Pulaski Rd                                                    , \n                            Chicago, IL 60630",
+        "phone": "312-742-4410",
+        "email": "CAPS.017District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1479,11 +1479,11 @@
         "dist_label": "20TH",
         "dist_num": "20",
         "name": "James M. Baier",
-        "addresses": ["5400 North Lincoln Avenue , Chicago, IL 60625"],
-        "phoneNumbers": ["312-742-8714,"],
-        "emails": ["CAPS.020District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-James-M.-Baier-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS20"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS20",
+        "address": "5400 North Lincoln Avenue                                                     , \n                            Chicago, IL 60625",
+        "phone": "312-742-8714,",
+        "email": "CAPS.020District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2540,11 +2540,11 @@
         "dist_label": "19TH",
         "dist_num": "19",
         "name": "Amin Jessani",
-        "addresses": ["850 West Addison St., Chicago, IL 60613"],
-        "phoneNumbers": ["312-744-8320"],
-        "emails": ["CAPS.019District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/019-CommanderAminJessani-scaled-300x300.jpeg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS19"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS19",
+        "address": "850 West Addison St.                                                    , \n                            Chicago, IL 60613",
+        "phone": "312-744-8320",
+        "email": "CAPS.019District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4533,11 +4533,11 @@
         "dist_label": "25TH",
         "dist_num": "25",
         "name": "Nelson Perez",
-        "addresses": ["5555 West Grand Ave, Chicago, IL 60639"],
-        "phoneNumbers": ["312-746-8605"],
-        "emails": ["CAPS.025District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Nelson-Perez-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS25"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS25",
+        "address": "5555 West Grand Ave                                                    , \n                            Chicago, IL 60639",
+        "phone": "312-746-8605",
+        "email": "CAPS.025District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5560,11 +5560,11 @@
         "dist_label": "14TH",
         "dist_num": "14",
         "name": "Melinda M. Linas",
-        "addresses": ["2150 North California Ave, Chicago, IL 60647"],
-        "phoneNumbers": ["312-744-8290"],
-        "emails": ["CAPS.014District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Melinda-M.-Linas-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS14"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS14",
+        "address": "2150 North California Ave                                                    , \n                            Chicago, IL 60647",
+        "phone": "312-744-8290",
+        "email": "CAPS.014District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6350,11 +6350,11 @@
         "dist_label": "22ND",
         "dist_num": "22",
         "name": "Brian Kinnane",
-        "addresses": ["1900 West Monterey Ave, Chicago, IL 60643"],
-        "phoneNumbers": ["312-745-0570"],
-        "emails": ["CAPS.022District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Brian-Kinnane-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS22"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS22",
+        "address": "1900 West Monterey Ave                                                    , \n                            Chicago, IL 60643",
+        "phone": "312-745-0570",
+        "email": "CAPS.022District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7563,11 +7563,11 @@
         "dist_label": "5TH",
         "dist_num": "5",
         "name": "Tyrone M. Pendarvis",
-        "addresses": ["727 East 111th St, Chicago, IL 60628"],
-        "phoneNumbers": ["312-747-8210"],
-        "emails": ["CAPS.05District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Tyrone-M.-Pendarvis-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS05"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS05",
+        "address": "727 East 111th St                                                    , \n                            Chicago, IL 60628",
+        "phone": "312-747-8210",
+        "email": "CAPS.05District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8696,11 +8696,11 @@
         "dist_label": "24TH",
         "dist_num": "24",
         "name": "Robert Vanna",
-        "addresses": ["6464 North Clark St, Chicago, IL 60626"],
-        "phoneNumbers": ["312-744-5907"],
-        "emails": ["CAPS.024District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Robert-Vanna-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS24"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS24",
+        "address": "6464 North Clark St                                                    , \n                            Chicago, IL 60626",
+        "phone": "312-744-5907",
+        "email": "CAPS.024District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9666,11 +9666,11 @@
         "dist_label": "16TH",
         "dist_num": "16",
         "name": "Heather L. Daniel",
-        "addresses": ["5151 North Milwaukee Ave, Chicago, IL 60630"],
-        "phoneNumbers": ["312-742-4480"],
-        "emails": ["CAPS.016District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/016-CommanderHeatherDaniel-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS16"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS16",
+        "address": "5151 North Milwaukee Ave                                                    , \n                            Chicago, IL 60630",
+        "phone": "312-742-4480",
+        "email": "CAPS.016District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13095,11 +13095,11 @@
         "dist_label": "8TH",
         "dist_num": "8",
         "name": "Bryan Spreyne",
-        "addresses": ["3420 West 63rd St, Chicago, IL 60629"],
-        "phoneNumbers": ["312-747-8730"],
-        "emails": ["CAPS.08District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Bryan-Spreyne-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS08"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS08",
+        "address": "3420 West 63rd St                                                    , \n                            Chicago, IL 60629",
+        "phone": "312-747-8730",
+        "email": "CAPS.08District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -14242,11 +14242,11 @@
         "dist_label": "18TH",
         "dist_num": "18",
         "name": "Michael Barz",
-        "addresses": ["1160 North Larrabee Ave, Chicago, IL 60610"],
-        "phoneNumbers": ["312-742-5870"],
-        "emails": ["CAPS.018District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/2014/11/Missing-Photo-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS18"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS18",
+        "address": "1160 North Larrabee Ave                                                    , \n                            Chicago, IL 60610",
+        "phone": "312-742-5870",
+        "email": "CAPS.018District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15780,11 +15780,11 @@
         "dist_label": "12TH",
         "dist_num": "12",
         "name": "Beth Giltmier",
-        "addresses": ["1412 S. Blue Island, Chicago, IL 60608-2112"],
-        "phoneNumbers": ["312-746-8396"],
-        "emails": ["CAPS.012District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Beth-Giltmier-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS12"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS12",
+        "address": "1412 S. Blue Island                                                    , \n                            Chicago, IL 60608-2112",
+        "phone": "312-746-8396",
+        "email": "CAPS.012District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16655,11 +16655,11 @@
         "dist_label": "11TH",
         "dist_num": "11",
         "name": "Davina F. Ward",
-        "addresses": ["3151 West Harrison St, Chicago, IL 60612"],
-        "phoneNumbers": ["312-746-8386"],
-        "emails": ["CAPS.011District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Davina-F.-Ward-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS11"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS11",
+        "address": "3151 West Harrison St                                                    , \n                            Chicago, IL 60612",
+        "phone": "312-746-8386",
+        "email": "CAPS.011District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17416,11 +17416,11 @@
         "dist_label": "7TH",
         "dist_num": "7",
         "name": "Lewis Courts",
-        "addresses": ["1438 W. 63rd Street, Chicago, IL 60636"],
-        "phoneNumbers": ["312-747-8220"],
-        "emails": ["CAPS.07District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Lewis-Courts-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS07"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS07",
+        "address": "1438 W. 63rd Street                                                    , \n                            Chicago, IL 60636",
+        "phone": "312-747-8220",
+        "email": "CAPS.07District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17903,11 +17903,11 @@
         "dist_label": "3RD",
         "dist_num": "3",
         "name": "Melvin W. Branch",
-        "addresses": ["7040 South Cottage Grove Ave, Chicago, IL 60637"],
-        "phoneNumbers": ["312-747-8201"],
-        "emails": ["CAPS.03District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Melvin-Branch-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS03"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS03",
+        "address": "7040 South Cottage Grove Ave                                                    , \n                            Chicago, IL 60637",
+        "phone": "312-747-8201",
+        "email": "CAPS.03District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19254,11 +19254,11 @@
         "dist_label": "4TH",
         "dist_num": "4",
         "name": "Keith Milmine",
-        "addresses": ["2255 East 103rd St, Chicago, IL 60617"],
-        "phoneNumbers": ["312-747-8205"],
-        "emails": ["CAPS.04District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Keith-Milmine-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS04"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS04",
+        "address": "2255 East 103rd St                                                    , \n                            Chicago, IL 60617",
+        "phone": "312-747-8205",
+        "email": "CAPS.04District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21206,11 +21206,11 @@
         "dist_label": "6TH",
         "dist_num": "6",
         "name": "Michael Tate",
-        "addresses": ["7808 South Halsted Street, Chicago, IL 60620"],
-        "phoneNumbers": ["312-745-3610/CAPS"],
-        "emails": ["CAPS.06District@chicagopolice.org"],
-        "image": "https://home.chicagopolice.org/wp-content/uploads/2014/11/Missing-Photo-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS06"
+        "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Michael-Tate-300x300.jpg",
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS06",
+        "address": "7808 South Halsted Street                                                    , \n                            Chicago, IL 60620",
+        "phone": "312-745-3610/CAPS",
+        "email": "CAPS.06District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21772,11 +21772,11 @@
         "dist_label": "10TH",
         "dist_num": "10",
         "name": "William Betancourt",
-        "addresses": ["3315 West Ogden Avenue, Chicago, IL 60623"],
-        "phoneNumbers": ["312-747-7511"],
-        "emails": ["CAPS.010District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-William-Bentancourt-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS10"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS10",
+        "address": "3315 West Ogden Avenue                                                    , \n                            Chicago, IL 60623",
+        "phone": "312-747-7511",
+        "email": "CAPS.010District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22361,11 +22361,11 @@
         "dist_label": "1ST",
         "dist_num": "1",
         "name": "David Harris",
-        "addresses": ["1718 South State Street, Chicago, IL 60616"],
-        "phoneNumbers": ["312-745-4290"],
-        "emails": ["CAPS.01District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-David-Harris-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS01"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS01",
+        "address": "1718 South State Street                                                    , \n                            Chicago, IL 60616",
+        "phone": "312-745-4290",
+        "email": "CAPS.01District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23946,11 +23946,11 @@
         "dist_label": "9TH",
         "dist_num": "9",
         "name": "Curtis Mullenix",
-        "addresses": ["3120 S. Halsted St., Chicago, IL 60608"],
-        "phoneNumbers": ["312-747-8227"],
-        "emails": ["CAPS.09District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Curtis-Mullenix-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS09"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS09",
+        "address": "3120 S. Halsted St.                                                    , \n                            Chicago, IL 60608",
+        "phone": "312-747-8227",
+        "email": "CAPS.09District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24800,11 +24800,11 @@
         "dist_label": "2ND",
         "dist_num": "2",
         "name": "Yakimba Phillips",
-        "addresses": ["5101 South Wentworth Avenue, Chicago, IL 60609"],
-        "phoneNumbers": ["312-747-8366"],
-        "emails": ["CAPS.02District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Screenshot_20230812_081738_Outlook-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS02"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS02",
+        "address": "5101 South Wentworth Avenue                                                    , \n                            Chicago, IL 60609",
+        "phone": "312-747-8366",
+        "email": "CAPS.02District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26396,11 +26396,11 @@
         "dist_label": "15TH",
         "dist_num": "15",
         "name": "Carlin Morse",
-        "addresses": ["5701 West Madison Ave, Chicago, IL 60644"],
-        "phoneNumbers": ["312-743-1440"],
-        "emails": ["CAPS.015District@chicagopolice.org"],
         "image": "https://home.chicagopolice.org/wp-content/uploads/Commander-Carlin-Morse-300x300.jpg",
-        "twitterUrl": "https://www.twitter.com/ChicagoCAPS15"
+        "twitterUrl": "https://www.twitter.com/ChicagoCAPS15",
+        "address": "5701 West Madison Ave                                                    , \n                            Chicago, IL 60644",
+        "phone": "312-743-1440",
+        "email": "CAPS.015District@chicagopolice.org"
       },
       "geometry": {
         "type": "MultiPolygon",
