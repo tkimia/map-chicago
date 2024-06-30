@@ -32,6 +32,9 @@ export function FeatureCard({
   let candidates: string[] | undefined = undefined;
 
   switch (type) {
+    case "cook-commissioners":
+      title = `District ${properties?.DISTRICT_TXT}`;
+      break;
     case "wards":
       title = `Ward ${properties?.ward}`;
       break;
