@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   MapGeoJSONFeature,
   MapLayerMouseEvent,
@@ -11,6 +11,7 @@ import {
 export default function useMapHoverState(opts: {
   sourceId: string;
   layerId: string;
+  selectedBoundaryId?: string;
 }) {
   const [hoveredFeature, setHoveredFeature] =
     useState<MapGeoJSONFeature | null>(null);
@@ -19,6 +20,12 @@ export default function useMapHoverState(opts: {
     useState<MapGeoJSONFeature | null>(null);
 
   const [point, setPoint] = useState<Point | null>(null);
+  const [clickedPoint, setClickedPoint] = useState<Point | null>(null);
+
+  useEffect(() => {
+    _setClickedFeature(null);
+    setClickedPoint(null);
+  }, [opts.selectedBoundaryId]);
 
   const setClickedFeature = (
     map: Omit<MapRef, "getMap">,
@@ -29,7 +36,9 @@ export default function useMapHoverState(opts: {
         { source: opts.sourceId, id: clickedFeature.id as string },
         { clicked: false }
       );
+      setClickedPoint(null);
     }
+
     _setClickedFeature(feature);
     if (!map.getSource(opts.sourceId)) return;
     map.setFeatureState(
@@ -71,13 +80,22 @@ export default function useMapHoverState(opts: {
     hoveredFeature,
     clickedFeature,
     mousePoint: point,
+    clickedPoint,
     setClickedFeature,
     events: {
       onMouseMove,
       onMouseLeave,
       onClick: (e: MapLayerMouseEvent) => {
         if (!e.features?.length) return;
+
+        if (clickedFeature === e.features[0]) {
+          _setClickedFeature(null);
+          setClickedPoint(null);
+          return;
+        }
+
         setClickedFeature(e.target, e.features[0]);
+        setClickedPoint(e.point);
       },
       onData: (e: MapStyleDataEvent | MapSourceDataEvent) => {
         if (e.dataType !== "source" || !e.isSourceLoaded) return;

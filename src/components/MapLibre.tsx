@@ -24,14 +24,21 @@ import { FeatureCard } from "./FeatureCard";
 
 export default function MainMap() {
   const { watch, setValue } = useUserChoices();
-  const { events, hoveredFeature, mousePoint, setClickedFeature } =
-    useMapHoverState({
-      sourceId: MAIN_SOURCE,
-      layerId: MAIN_LAYER,
-    });
   const { boundaryLayer, userAddress, isExploreMode } = watch();
   const selectedBoundary =
     boundaries.find((b) => b.id === boundaryLayer) ?? null;
+  const {
+    events,
+    hoveredFeature,
+    mousePoint,
+    setClickedFeature,
+    clickedFeature,
+    clickedPoint,
+  } = useMapHoverState({
+    sourceId: MAIN_SOURCE,
+    layerId: MAIN_LAYER,
+    selectedBoundaryId: selectedBoundary?.id,
+  });
 
   return (
     <Map
@@ -88,6 +95,7 @@ export default function MainMap() {
           />
         </Source>
       )}
+
       {selectedBoundary && hoveredFeature && mousePoint && (
         <FeatureCard
           type={selectedBoundary.id}
@@ -95,6 +103,14 @@ export default function MainMap() {
           className="absolute z-10 pointer-events-none border-none"
           style={{ left: mousePoint.x, top: mousePoint.y }}
           variant="dark"
+        />
+      )}
+      {selectedBoundary && clickedFeature && clickedPoint && (
+        <FeatureCard
+          type={selectedBoundary.id}
+          properties={clickedFeature.properties}
+          className="absolute z-10 pointer-events-none border-none"
+          style={{ left: clickedPoint.x, top: clickedPoint.y }}
         />
       )}
 
