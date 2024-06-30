@@ -6,6 +6,7 @@ import Map, {
   Layer,
   GeolocateControl,
   FullscreenControl,
+  NavigationControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import {
@@ -64,6 +65,7 @@ export default function MainMap() {
         }}
       />
       <FullscreenControl />
+      <NavigationControl showCompass={false} visualizePitch={false} />
       {userAddress && (
         <Marker
           longitude={userAddress.lng}
