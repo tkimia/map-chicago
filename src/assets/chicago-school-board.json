@@ -3,7 +3,9 @@
   "name": "Chicago Elected Representative School Board 20 District Map 10.31.23",
   "crs": {
     "type": "name",
-    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
   },
   "features": [
     {
@@ -11,7 +13,10 @@
       "id": 11,
       "properties": {
         "Name": "District 1A",
-        "description": "TARGET_DEV -177<br> TOTAL 137142"
+        "description": "TARGET_DEV -177<br> TOTAL 137142",
+        "candidate_1": "Jennifer Custer",
+        "candidate_2": "Charles (Chuck) Hernandez",
+        "candidate_3": "Michelle N. Pierre"
       },
       "geometry": {
         "type": "Polygon",
@@ -2498,7 +2503,7 @@
             [-87.798219, 42.000006],
             [-87.798472, 42.000003],
             [-87.798497, 42.000003],
-            [-87.798775, 42.0],
+            [-87.798775, 42],
             [-87.799131, 41.999996],
             [-87.799233, 41.999995],
             [-87.799487, 41.999993],
@@ -2962,7 +2967,10 @@
       "id": 12,
       "properties": {
         "Name": "District 1B",
-        "description": "TARGET_DEV -12<br> TOTAL 137307"
+        "description": "TARGET_DEV -12<br> TOTAL 137307",
+        "candidate_1": "Jennifer Custer",
+        "candidate_2": "Charles (Chuck) Hernandez",
+        "candidate_3": "Michelle N. Pierre"
       },
       "geometry": {
         "type": "Polygon",
@@ -4168,7 +4176,12 @@
       "id": 21,
       "properties": {
         "Name": "District 2A",
-        "description": "TARGET_DEV 512<br> TOTAL 137831"
+        "description": "TARGET_DEV 512<br> TOTAL 137831",
+        "candidate_1": "Ebony L. DeBerry",
+        "candidate_2": "Kate Doyle",
+        "candidate_3": "Daniel Steven Kleinman",
+        "candidate_4": "Margaret “Maggie” Cullerton Hooper",
+        "candidate_5": "Bruce Leon"
       },
       "geometry": {
         "type": "Polygon",
@@ -5085,7 +5098,12 @@
       "id": 22,
       "properties": {
         "Name": "District 2B",
-        "description": "TARGET_DEV -34<br> TOTAL 137285"
+        "description": "TARGET_DEV -34<br> TOTAL 137285",
+        "candidate_1": "Ebony L. DeBerry",
+        "candidate_2": "Kate Doyle",
+        "candidate_3": "Daniel Steven Kleinman",
+        "candidate_4": "Margaret “Maggie” Cullerton Hooper",
+        "candidate_5": "Bruce Leon"
       },
       "geometry": {
         "type": "Polygon",
@@ -5916,7 +5934,10 @@
       "id": 31,
       "properties": {
         "Name": "District 3A",
-        "description": "TARGET_DEV 134<br> TOTAL 137453"
+        "description": "TARGET_DEV 134<br> TOTAL 137453",
+        "candidate_1": "Carlos A. Rivas Jr.",
+        "candidate_2": "Jason C. Dones",
+        "candidate_3": "Kirk J. Ortiz"
       },
       "geometry": {
         "type": "Polygon",
@@ -6919,7 +6940,10 @@
       "id": 32,
       "properties": {
         "Name": "District 3B",
-        "description": "TARGET_DEV -230<br> TOTAL 137089"
+        "description": "TARGET_DEV -230<br> TOTAL 137089",
+        "candidate_1": "Carlos A. Rivas Jr.",
+        "candidate_2": "Jason C. Dones",
+        "candidate_3": "Kirk J. Ortiz"
       },
       "geometry": {
         "type": "Polygon",
@@ -7854,7 +7878,13 @@
       "id": 41,
       "properties": {
         "Name": "District 4A",
-        "description": "TARGET_DEV 334<br> TOTAL 137653"
+        "description": "TARGET_DEV 334<br> TOTAL 137653",
+        "candidate_1": "Kimberly Brown",
+        "candidate_2": "Karen Zaccor",
+        "candidate_3": "Ellen Rosenfeld",
+        "candidate_4": "Thomas Day",
+        "candidate_5": "Andrew A. Davis",
+        "candidate_6": "Carmen Gioiosa"
       },
       "geometry": {
         "type": "Polygon",
@@ -8603,7 +8633,13 @@
       "id": 42,
       "properties": {
         "Name": "District 4B",
-        "description": "TARGET_DEV 434<br> TOTAL 137753"
+        "description": "TARGET_DEV 434<br> TOTAL 137753",
+        "candidate_1": "Kimberly Brown",
+        "candidate_2": "Karen Zaccor",
+        "candidate_3": "Ellen Rosenfeld",
+        "candidate_4": "Thomas Day",
+        "candidate_5": "Andrew A. Davis",
+        "candidate_6": "Carmen Gioiosa"
       },
       "geometry": {
         "type": "Polygon",
@@ -9753,7 +9789,12 @@
       "id": 51,
       "properties": {
         "Name": "District 5A",
-        "description": "TARGET_DEV -589<br> TOTAL 136730"
+        "description": "TARGET_DEV -589<br> TOTAL 136730",
+        "candidate_1": "Anthony Hargrove",
+        "candidate_2": "Aaron “Jitu” Brown",
+        "candidate_3": "Kernetha Jones",
+        "candidate_4": "Jousef M. Shkoukani",
+        "candidate_5": "Michilla “Kyla” Blaise"
       },
       "geometry": {
         "type": "Polygon",
@@ -11308,7 +11349,12 @@
       "id": 52,
       "properties": {
         "Name": "District 5B",
-        "description": "TARGET_DEV -241<br> TOTAL 137078"
+        "description": "TARGET_DEV -241<br> TOTAL 137078",
+        "candidate_1": "Anthony Hargrove",
+        "candidate_2": "Aaron “Jitu” Brown",
+        "candidate_3": "Kernetha Jones",
+        "candidate_4": "Jousef M. Shkoukani",
+        "candidate_5": "Michilla “Kyla” Blaise"
       },
       "geometry": {
         "type": "Polygon",
@@ -12510,7 +12556,12 @@
       "id": 61,
       "properties": {
         "Name": "District 6A",
-        "description": "TARGET_DEV 548<br> TOTAL 137867"
+        "description": "TARGET_DEV 548<br> TOTAL 137867",
+        "candidate_1": "Jessica Biggs",
+        "candidate_2": "Anusha Thotakura",
+        "candidate_3": "Brenda I. Delgado",
+        "candidate_4": "Danielle J. Wallace",
+        "candidate_5": "Andre Smith"
       },
       "geometry": {
         "type": "Polygon",
@@ -13480,7 +13531,12 @@
       "id": 62,
       "properties": {
         "Name": "District 6B",
-        "description": "TARGET_DEV 131<br> TOTAL 137450"
+        "description": "TARGET_DEV 131<br> TOTAL 137450",
+        "candidate_1": "Jessica Biggs",
+        "candidate_2": "Anusha Thotakura",
+        "candidate_3": "Brenda I. Delgado",
+        "candidate_4": "Danielle J. Wallace",
+        "candidate_5": "Andre Smith"
       },
       "geometry": {
         "type": "Polygon",
@@ -14921,7 +14977,12 @@
       "id": 71,
       "properties": {
         "Name": "District 7A",
-        "description": "TARGET_DEV -255<br> TOTAL 137064"
+        "description": "TARGET_DEV -255<br> TOTAL 137064",
+        "candidate_1": "Yesenia Lopez",
+        "candidate_2": "Jesus Ayala Jr.",
+        "candidate_3": "Felipe “Phil” Luna Jr.",
+        "candidate_4": "Eva A. Villalobos",
+        "candidate_5": "Raquel Don"
       },
       "geometry": {
         "type": "Polygon",
@@ -16032,7 +16093,12 @@
       "id": 72,
       "properties": {
         "Name": "District 7B",
-        "description": "TARGET_DEV -176<br> TOTAL 137143"
+        "description": "TARGET_DEV -176<br> TOTAL 137143",
+        "candidate_1": "Yesenia Lopez",
+        "candidate_2": "Jesus Ayala Jr.",
+        "candidate_3": "Felipe “Phil” Luna Jr.",
+        "candidate_4": "Eva A. Villalobos",
+        "candidate_5": "Raquel Don"
       },
       "geometry": {
         "type": "Polygon",
@@ -17271,7 +17337,10 @@
       "id": 81,
       "properties": {
         "Name": "District 8A",
-        "description": "TARGET_DEV 352<br> TOTAL 137671"
+        "description": "TARGET_DEV 352<br> TOTAL 137671",
+        "candidate_1": "Angel Gutierrez",
+        "candidate_2": "Felix Ponce",
+        "candidate_3": "Darius Dee Nix"
       },
       "geometry": {
         "type": "Polygon",
@@ -18569,7 +18638,10 @@
       "id": 82,
       "properties": {
         "Name": "District 8B",
-        "description": "TARGET_DEV -77<br> TOTAL 137242"
+        "description": "TARGET_DEV -77<br> TOTAL 137242",
+        "candidate_1": "Angel Gutierrez",
+        "candidate_2": "Felix Ponce",
+        "candidate_3": "Darius Dee Nix"
       },
       "geometry": {
         "type": "Polygon",
@@ -20047,7 +20119,12 @@
       "id": 91,
       "properties": {
         "Name": "District 9A",
-        "description": "TARGET_DEV -802<br> TOTAL 136517"
+        "description": "TARGET_DEV -802<br> TOTAL 136517",
+        "candidate_1": "Brittany Bailey Preston",
+        "candidate_2": "Therese Boyle",
+        "candidate_3": "Lanetta M. Thomas",
+        "candidate_4": "Miquel Lewis",
+        "candidate_5": "La’Mont Raymond Williams"
       },
       "geometry": {
         "type": "Polygon",
@@ -21347,7 +21424,12 @@
       "id": 92,
       "properties": {
         "Name": "District 9B",
-        "description": "TARGET_DEV 191<br> TOTAL 137510"
+        "description": "TARGET_DEV 191<br> TOTAL 137510",
+        "candidate_1": "Brittany Bailey Preston",
+        "candidate_2": "Therese Boyle",
+        "candidate_3": "Lanetta M. Thomas",
+        "candidate_4": "Miquel Lewis",
+        "candidate_5": "La’Mont Raymond Williams"
       },
       "geometry": {
         "type": "Polygon",
@@ -22732,7 +22814,14 @@
       "id": 101,
       "properties": {
         "Name": "District 10A",
-        "description": "TARGET_DEV -575<br> TOTAL 136744"
+        "description": "TARGET_DEV -575<br> TOTAL 136744",
+        "candidate_1": "Che “Rhymefest” Smith",
+        "candidate_2": "Adam Parrott-Sheffer",
+        "candidate_3": "Karin Norington-Reaves",
+        "candidate_4": "Robert Jones",
+        "candidate_5": "Nathaniel “Nate” Ward",
+        "candidate_6": "Rosita Chatonda",
+        "candidate_7": "James M. Walton Jr."
       },
       "geometry": {
         "type": "Polygon",
@@ -24248,7 +24337,14 @@
       "id": 102,
       "properties": {
         "Name": "District 10B",
-        "description": "TARGET_DEV 540<br> TOTAL 137859"
+        "description": "TARGET_DEV 540<br> TOTAL 137859",
+        "candidate_1": "Che “Rhymefest” Smith",
+        "candidate_2": "Adam Parrott-Sheffer",
+        "candidate_3": "Karin Norington-Reaves",
+        "candidate_4": "Robert Jones",
+        "candidate_5": "Nathaniel “Nate” Ward",
+        "candidate_6": "Rosita Chatonda",
+        "candidate_7": "James M. Walton Jr."
       },
       "geometry": {
         "type": "Polygon",

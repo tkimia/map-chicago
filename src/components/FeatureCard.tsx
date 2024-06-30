@@ -29,6 +29,7 @@ export function FeatureCard({
   let phone = properties?.phone as string | undefined;
   let email = properties?.email as string | undefined;
   let address = properties?.address as string | undefined;
+  let candidates: string[] | undefined = undefined;
 
   switch (type) {
     case "wards":
@@ -40,6 +41,12 @@ export function FeatureCard({
       break;
     case "chicago-school":
       title = properties?.Name;
+      for (const key in properties) {
+        if (key.startsWith("candidate")) {
+          candidates = candidates ?? [];
+          candidates.push(properties[key]);
+        }
+      }
       break;
     case "illinois-house":
     case "illinois-senate":
@@ -71,11 +78,11 @@ export function FeatureCard({
       style={style}
       onClick={onClick}
     >
-      <CardContent className="flex flex-row justify-center gap-4 p-4 w-[350px] h-[150px]">
+      <CardContent className="flex flex-row justify-center gap-4 p-4 w-[350px]">
         <div className="flex flex-col h-full justify-center items-center space-y-2">
           <Avatar className="h-16 w-16">
             <AvatarImage src={image} className="object-cover" />
-            <AvatarFallback>?</AvatarFallback>
+            <AvatarFallback className="text-black">?</AvatarFallback>
           </Avatar>
           {name && (
             <Badge variant="secondary" className="text-center max-w-24">
@@ -105,6 +112,18 @@ export function FeatureCard({
               </>
             )}
           </div>
+          {candidates && (
+            <>
+              <p className="text-wrap text-xs italic">
+                School board candidates for this district:
+              </p>
+              <ul>
+                {candidates.map((candidate) => (
+                  <li>{candidate}</li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </CardContent>
     </Card>
