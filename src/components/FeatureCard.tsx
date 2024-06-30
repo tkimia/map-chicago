@@ -49,11 +49,11 @@ export function FeatureCard({
         typeof properties?.person === "string"
           ? JSON.parse(properties.person)
           : properties?.person;
-      image = person.image ?? "";
-      name = person.name;
-      phone = person.phone as string | undefined;
-      email = person.email as string | undefined;
-      address = person.address as string | undefined;
+      image = person?.image ?? "";
+      name = person?.name;
+      phone = person?.phone as string | undefined;
+      email = person?.email as string | undefined;
+      address = person?.address as string | undefined;
       break;
   }
 
