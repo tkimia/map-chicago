@@ -16,20 +16,20 @@ export function ExploreScrollControl() {
   return (
     <ScrollArea className="w-full whitespace-nowrap bg-white rounded-md border">
       <div className="flex w-max space-x-4 p-4">
-        {boundaries.map(({ id, name }) => (
+        {boundaries.map(({ id, name, description }) => (
           <Card
             key={id}
             className={cn(
-              id === boundaryLayer
-                ? "bg-slate-300"
-                : "bg-white hover:bg-slate-100",
-              "cursor-pointer  transition-colors duration-200 ease-in-out"
+              {
+                "border-blue-500": id === boundaryLayer,
+              },
+              "cursor-pointer  transition-colors duration-200 ease-in-out max-w-md text-wrap"
             )}
             onClick={() => setValue("boundaryLayer", id)}
           >
             <CardHeader>
               <CardTitle>{name}</CardTitle>
-              <CardDescription>Placeholder Text</CardDescription>
+              <CardDescription>{description}</CardDescription>
             </CardHeader>
           </Card>
         ))}
