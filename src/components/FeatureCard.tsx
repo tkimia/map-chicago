@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { Phone, Mail, Home } from "lucide-react";
+import { Phone, Mail, Home, ExternalLink } from "lucide-react";
 import { Boundary } from "@/lib/data-loader";
 import { CSSProperties } from "react";
 
@@ -29,7 +29,7 @@ export function FeatureCard({
   let phone = properties?.phone as string | undefined;
   let email = properties?.email as string | undefined;
   let address = properties?.address as string | undefined;
-  let candidates: string[] | undefined = undefined;
+  let candidates: { name: string; url?: string }[] | undefined = undefined;
 
   switch (type) {
     case "cook-commissioners":
@@ -42,15 +42,19 @@ export function FeatureCard({
       title = `${properties?.dist_label?.toLowerCase()} District`;
       image = properties?.image ?? "";
       break;
-    case "chicago-school":
-      title = properties?.Name;
-      for (const key in properties) {
-        if (key.startsWith("candidate")) {
-          candidates = candidates ?? [];
-          candidates.push(properties[key]);
-        }
+    case "chicago-school": {
+      title = `District ${properties?.elec_dist}`;
+      let i = 1;
+      while (properties && `candidate_${i}` in properties) {
+        candidates = candidates ?? [];
+        candidates.push({
+          name: properties[`candidate_${i}`],
+          url: properties[`candidate_${i}_url`],
+        });
+        i++;
       }
       break;
+    }
     case "illinois-house":
     case "illinois-senate":
       title = properties?.name;
@@ -121,9 +125,23 @@ export function FeatureCard({
                 School board candidates for this district:
               </p>
               <ul>
-                {candidates.map((candidate) => (
-                  <li>{candidate}</li>
-                ))}
+                {candidates.map((candidate) =>
+                  candidate.url ? (
+                    <li>
+                      <a
+                        href={candidate.url}
+                        className="text-blue-600 underline flex"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {candidate.name}{" "}
+                        <ExternalLink className="ml-1" size={12} />
+                      </a>
+                    </li>
+                  ) : (
+                    <li>{candidate.name}</li>
+                  )
+                )}
               </ul>
             </>
           )}

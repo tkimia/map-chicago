@@ -125,7 +125,7 @@ export default function MainMap() {
         <FeatureCard
           type={selectedBoundary.id}
           properties={hoveredFeature.properties}
-          className="absolute z-10 pointer-events-none border-none"
+          className="absolute z-10 border-none"
           style={{ left: mousePoint.x, top: mousePoint.y }}
           variant="dark"
         />
