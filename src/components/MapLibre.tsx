@@ -22,10 +22,14 @@ import { CardScrollControl } from "./CardScrollControl";
 import IntroScreen from "./IntroScreen";
 import { ExploreScrollControl } from "./ExploreScrollControl";
 import { FeatureCard } from "./FeatureCard";
+import MainDrawer from "./Drawer";
+import { useState } from "react";
 
 export default function MainMap() {
+  const [mode, setMode] = useState<"explore" | "representatives" | null>(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const { watch, setValue } = useUserChoices();
-  const { boundaryLayer, userAddress, isExploreMode } = watch();
+  const { boundaryLayer, userAddress } = watch();
   const selectedBoundary =
     boundaries.find((b) => b.id === boundaryLayer) ?? null;
   const {
@@ -52,9 +56,22 @@ export default function MainMap() {
       interactiveLayerIds={[MAIN_LAYER]}
       {...events}
     >
-      {!userAddress && !isExploreMode && <IntroScreen />}
-      <AddressSearch />
+      {!mode && (
+        <IntroScreen
+          onExplore={() => {
+            setMode("explore");
+            setDrawerOpen(true);
+          }}
+        />
+      )}
+      <AddressSearch
+        onFindAddress={() => {
+          setMode("representatives");
+          setDrawerOpen(true);
+        }}
+      />
       <GeolocateControl
+        position="top-left"
         showUserLocation={false}
         onGeolocate={(e) => {
           setValue("userAddress", {
@@ -62,10 +79,16 @@ export default function MainMap() {
             lng: e.coords.longitude,
             tooltip: "Your location",
           });
+          setMode("representatives");
+          setDrawerOpen(true);
         }}
       />
-      <FullscreenControl />
-      <NavigationControl showCompass={false} visualizePitch={false} />
+      <FullscreenControl position="top-left" />
+      <NavigationControl
+        position="top-left"
+        showCompass={false}
+        visualizePitch={false}
+      />
       {userAddress && (
         <Marker
           longitude={userAddress.lng}
@@ -115,13 +138,23 @@ export default function MainMap() {
           style={{ left: clickedPoint.x, top: clickedPoint.y }}
         />
       )}
-
-      <div className="absolute bottom-4 mx-auto w-11/12 left-1/2 transform -translate-x-1/2">
-        {userAddress && (
+      <MainDrawer
+        className="absolute right-4 top-4"
+        title={mode === "representatives" ? "Your Representatives" : "Explore"}
+        description={
+          mode === "representatives"
+            ? "Scroll to see your representatives"
+            : "Click on a category to explore its district map"
+        }
+        open={drawerOpen}
+        onOpenChange={setDrawerOpen}
+        disabled={mode === null}
+      >
+        {mode === "representatives" && (
           <CardScrollControl onClickFeature={setClickedFeature} />
         )}
-        {isExploreMode && !userAddress && <ExploreScrollControl />}
-      </div>
+        {mode === "explore" && <ExploreScrollControl />}
+      </MainDrawer>
     </Map>
   );
 }

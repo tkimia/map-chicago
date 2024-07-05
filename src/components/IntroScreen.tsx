@@ -6,13 +6,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "./ui/button";
-import useUserChoices from "@/hooks/useUserChoices";
+
+type Props = {
+  onExplore: () => void;
+};
 
 // a semi-transparent overlay on the map
-export default function IntroScreen() {
-  const { setValue } = useUserChoices();
+export default function IntroScreen({ onExplore }: Props) {
   return (
-    <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center">
+    <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center z-10">
       {/* a card centered in its parent */}
       <Card className=" bg-white w-[350px] ">
         <CardHeader>
@@ -26,9 +28,7 @@ export default function IntroScreen() {
             Enter your address above, use your location
           </p>
           <p className="text-sm font-medium">or</p>
-          <Button onClick={() => setValue("isExploreMode", true)}>
-            Explore
-          </Button>
+          <Button onClick={onExplore}>Explore</Button>
         </CardContent>
       </Card>
     </div>

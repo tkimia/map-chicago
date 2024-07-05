@@ -75,3 +75,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.maplibregl-ctrl-top-left {
+  z-index: 20 !important;
+}

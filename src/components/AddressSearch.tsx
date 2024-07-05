@@ -16,9 +16,10 @@ type RadarAddress = {
 
 type Props = {
   className?: string;
+  onFindAddress: () => void;
 };
 
-export default function AddressSearch({ className }: Props) {
+export default function AddressSearch({ className, onFindAddress }: Props) {
   const ref = React.useRef<HTMLDivElement | null>(null);
   const { setValue } = useUserChoices();
   const { current: map } = useMap();
@@ -38,17 +39,17 @@ export default function AddressSearch({ className }: Props) {
             lng: selection.longitude,
             tooltip: selection.addressLabel,
           });
-          setValue("isExploreMode", false);
+          onFindAddress();
         },
       });
     }
-  }, [setValue, map]);
+  }, [setValue, map, onFindAddress]);
 
   return (
     <div
       ref={ref}
       id="search-address"
-      className={cn("absolute top-4 left-8 right-24 z-[999] mx-14", className)}
+      className={cn("absolute top-2 left-8 right-24 z-20 mx-14", className)}
     />
   );
 }
