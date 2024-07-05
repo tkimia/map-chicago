@@ -38,11 +38,8 @@ export function CardScrollControl({ onClickFeature }: Props) {
             key={boundaryName}
             type={id}
             properties={feature.properties}
-            className={
-              boundaryLayer === id
-                ? "border-blue-500 flex-shrink-0"
-                : "flex-shrink-0"
-            }
+            className="flex-shrink-0"
+            isActive={boundaryLayer === id}
             onClick={() => {
               setValue("boundaryLayer", id);
               if (map) {

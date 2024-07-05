@@ -30,6 +30,7 @@ async function main() {
       phone: null as string | null,
       email: null as string | null,
       image: `${IMAGE_PATH}/${ward}.jpg`,
+      url,
     };
     Array.from(document.querySelectorAll(".page-description tr")).forEach(
       (row) => {

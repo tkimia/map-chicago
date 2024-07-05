@@ -29,6 +29,7 @@ type PersonProperties = {
   email: string | null;
   image?: string | null;
   twitterUrl?: string | null;
+  website?: string | null;
 };
 
 export function amendFeature(feature: Feature, properties: PersonProperties) {

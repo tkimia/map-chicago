@@ -27,7 +27,8 @@
         "name": "Tara Stamps",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126034566",
-        "email": null
+        "email": null,
+        "website": "https://www.cookcountyil.gov/all-people/tara-stamps"
       },
       "geometry": {
         "type": "Polygon",
@@ -2405,7 +2406,8 @@
         "name": "Dennis Deer",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126033019",
-        "email": "dennis.deer@cookcountyil.gov"
+        "email": "dennis.deer@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/dennis-deer"
       },
       "geometry": {
         "type": "Polygon",
@@ -5346,7 +5348,8 @@
         "name": "Bill Lowry",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126036391",
-        "email": "bill.lowry@cookcountyil.gov"
+        "email": "bill.lowry@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/bill-lowry"
       },
       "geometry": {
         "type": "Polygon",
@@ -8653,7 +8656,8 @@
         "name": "Stanley Moore",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126032065",
-        "email": "stanley.moore2@cookcountyil.gov"
+        "email": "stanley.moore2@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/stanley-moore"
       },
       "geometry": {
         "type": "Polygon",
@@ -11209,8 +11213,9 @@
         "ShapeSTLength": 416245.606496522,
         "name": "Monica Gordon",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
-        "phone": null,
-        "email": null
+        "phone": "(312) 603-6381",
+        "email": "Monica.Gordon2@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/monica-gordon"
       },
       "geometry": {
         "type": "Polygon",
@@ -14860,7 +14865,8 @@
         "name": "Donna Miller",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126034216",
-        "email": "donna.miller@cookcountyil.gov"
+        "email": "donna.miller@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/donna-miller"
       },
       "geometry": {
         "type": "Polygon",
@@ -21105,7 +21111,8 @@
         "name": "Alma Anaya",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126035443",
-        "email": "alma.anaya@cookcountyil.gov"
+        "email": "alma.anaya@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/alma-anaya"
       },
       "geometry": {
         "type": "Polygon",
@@ -22554,7 +22561,8 @@
         "name": "Anthony Quezada",
         "address": "2934 N. Milwaukee Unit C Chicago, IL",
         "phone": "3126036386",
-        "email": "district8@cookcountyil.gov"
+        "email": "district8@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/anthony-quezada"
       },
       "geometry": {
         "type": "Polygon",
@@ -24039,7 +24047,8 @@
         "name": "Maggie Trevor",
         "address": "118 N. Clark St Chicago, IL",
         "phone": "3126034393",
-        "email": "district9@cookcountyil.gov"
+        "email": "district9@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/maggie-trevor"
       },
       "geometry": {
         "type": "Polygon",
@@ -28812,7 +28821,8 @@
         "name": "Bridget Gainer",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126034210",
-        "email": "district10@cookcountyil.gov"
+        "email": "district10@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/bridget-gainer"
       },
       "geometry": {
         "type": "Polygon",
@@ -31218,7 +31228,8 @@
         "name": "John Daley",
         "address": "118 N. Clark St., Room 3M Chicago, IL",
         "phone": "3126034400",
-        "email": "john.daley@cookcountyil.gov"
+        "email": "john.daley@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/john-daley"
       },
       "geometry": {
         "type": "Polygon",
@@ -34138,7 +34149,8 @@
         "name": "Bridget Degnen",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126036380",
-        "email": "bridget.degnen@cookcountyil.gov"
+        "email": "bridget.degnen@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/bridget-degnen"
       },
       "geometry": {
         "type": "Polygon",
@@ -36517,8 +36529,9 @@
         "ShapeSTLength": 160971.2731810357,
         "name": "Josina Morita",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
-        "phone": null,
-        "email": null
+        "phone": "3126036383",
+        "email": "Josina.Morita@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/josina-morita"
       },
       "geometry": {
         "type": "Polygon",
@@ -38183,7 +38196,8 @@
         "name": "Scott Britton",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126034932",
-        "email": "scott.britton@cookcountyil.gov"
+        "email": "scott.britton@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/scott-britton"
       },
       "geometry": {
         "type": "Polygon",
@@ -41234,7 +41248,8 @@
         "name": "Kevin Morrison",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126036388",
-        "email": "kevin.morrison@cookcountyil.gov"
+        "email": "kevin.morrison@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/kevin-morrison"
       },
       "geometry": {
         "type": "Polygon",
@@ -45800,7 +45815,8 @@
         "name": "Frank Aguilar",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126034735",
-        "email": "commissionerfrankjaguilar@gmail.com"
+        "email": "commissionerfrankjaguilar@gmail.com",
+        "website": "https://www.cookcountyil.gov/all-people/frank-aguilar"
       },
       "geometry": {
         "type": "Polygon",
@@ -48434,7 +48450,8 @@
         "name": "Sean Morrison",
         "address": "118 N. Clark St., Room 567 Chicago, IL",
         "phone": "3126034215",
-        "email": "sean.morrison@cookcountyil.gov"
+        "email": "sean.morrison@cookcountyil.gov",
+        "website": "https://www.cookcountyil.gov/all-people/sean-morrison"
       },
       "geometry": {
         "type": "Polygon",

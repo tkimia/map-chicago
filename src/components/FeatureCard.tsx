@@ -1,15 +1,17 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { Phone, Mail, Home, ExternalLink } from "lucide-react";
+import { Phone, Mail, Home, ExternalLink, Map } from "lucide-react";
 import { Boundary } from "@/lib/data-loader";
 import { CSSProperties } from "react";
+import { Button } from "./ui/button";
 
 type Props = {
   type: Boundary["id"];
   properties: Boundary["data"]["features"][0]["properties"];
   onClick?: () => void;
+  isActive?: boolean;
   className?: string;
   variant?: "light" | "dark";
   style?: CSSProperties;
@@ -22,6 +24,7 @@ export function FeatureCard({
   onClick,
   variant = "light",
   style,
+  isActive = false,
 }: Props) {
   let title: string;
   let image = properties?.image;
@@ -30,6 +33,7 @@ export function FeatureCard({
   let email = properties?.email as string | undefined;
   let address = properties?.address as string | undefined;
   let candidates: { name: string; url?: string }[] | undefined = undefined;
+  const website: string | undefined = properties?.website;
 
   switch (type) {
     case "cook-commissioners":
@@ -75,15 +79,15 @@ export function FeatureCard({
     <Card
       className={cn(
         {
-          "bg-white shadow-md rounded-lg overflow-hidden transition-shadow ease-in-out duration-300 hover:shadow-xl cursor-pointer":
+          "bg-white shadow-md rounded-lg overflow-hidden transition-shadow ease-in-out duration-300":
             variant === "light",
-          "bg-gray-800 text-white shadow-md rounded-lg overflow-hidden transition-shadow ease-in-out duration-300 hover:shadow-xl cursor-pointer":
+          "bg-gray-800 text-white shadow-md rounded-lg overflow-hidden transition-shadow ease-in-out duration-300":
             variant === "dark",
+          "border-2 border-blue-500": isActive,
         },
         className
       )}
       style={style}
-      onClick={onClick}
     >
       <CardContent className="flex flex-row justify-center gap-4 p-4 w-[350px]">
         <div className="flex flex-col h-full justify-center items-center space-y-2">
@@ -92,9 +96,7 @@ export function FeatureCard({
             <AvatarFallback className="text-black">?</AvatarFallback>
           </Avatar>
           {name && (
-            <Badge variant="secondary" className="text-center max-w-24">
-              {name}
-            </Badge>
+            <p className="text-center text-sm font-bold max-w-24">{name}</p>
           )}
         </div>
         <div className="flex flex-col space-y-1 h-full grow">
@@ -127,7 +129,7 @@ export function FeatureCard({
               <ul>
                 {candidates.map((candidate) =>
                   candidate.url ? (
-                    <li>
+                    <li key={candidate.name}>
                       <a
                         href={candidate.url}
                         className="text-blue-600 underline flex"
@@ -139,7 +141,7 @@ export function FeatureCard({
                       </a>
                     </li>
                   ) : (
-                    <li>{candidate.name}</li>
+                    <li key={candidate.name}>{candidate.name}</li>
                   )
                 )}
               </ul>
@@ -147,6 +149,20 @@ export function FeatureCard({
           )}
         </div>
       </CardContent>
+      <CardFooter className="flex justify-end space-x-3">
+        {website && (
+          <a href={website} target="_blank" rel="noreferrer">
+            <Button size="sm">
+              <ExternalLink size={16} className="mr-2" />
+              Website
+            </Button>
+          </a>
+        )}
+        <Button size="sm" onClick={onClick} disabled={isActive}>
+          <Map size={16} className="mr-2" />
+          Map
+        </Button>
+      </CardFooter>
     </Card>
   );
 }
