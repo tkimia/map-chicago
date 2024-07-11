@@ -13,7 +13,7 @@ export function ExploreScrollControl() {
   const { boundaryLayer } = watch();
 
   return (
-    <div className="w-full flex flex-col space-y-4 overflow-auto">
+    <div className="w-full flex flex-col items-stretch space-y-4 overflow-y-auto">
       {boundaries.map(({ id, name, description }) => (
         <Card
           key={id}
@@ -21,7 +21,7 @@ export function ExploreScrollControl() {
             {
               "border-blue-500": id === boundaryLayer,
             },
-            "cursor-pointer  transition-colors duration-200 ease-in-out max-w-md text-wrap"
+            "cursor-pointer w-full transition-colors duration-200 ease-in-out max-w-md text-wrap"
           )}
           onClick={() => setValue("boundaryLayer", id)}
         >

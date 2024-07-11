@@ -51,8 +51,9 @@ export const boundaries: Boundary[] = [
   },
   {
     id: "wards",
-    name: "Wards",
-    description: "Boundaries for Chicago Wards and Aldermen.",
+    name: "Chicago's City Council (Wards)",
+    description:
+      "Boundaries for Chicago Wards and Aldermen for Chicago's City Council.",
     data: wardsData as FeatureCollection<MultiPolygon | Polygon>,
   },
   {

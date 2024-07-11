@@ -74,6 +74,10 @@ export default function MainMap() {
         position="top-left"
         showUserLocation={false}
         onGeolocate={(e) => {
+          e.target._map.flyTo({
+            center: [e.coords.longitude, e.coords.latitude],
+            zoom: 12,
+          });
           setValue("userAddress", {
             lat: e.coords.latitude,
             lng: e.coords.longitude,

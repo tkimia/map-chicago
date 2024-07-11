@@ -27,7 +27,7 @@ export default function MainDrawer(props: Props) {
         <ChevronsLeft />
       </Drawer.Trigger>
       <Drawer.Portal>
-        <Drawer.Content className="bg-white flex flex-col h-full w-[450px] mt-24 fixed bottom-0 right-0 p-4 shadow-xl z-50">
+        <Drawer.Content className="bg-white flex flex-col h-full w-full md:w-[450px] mt-24 fixed bottom-0 right-0 p-4 shadow-xl z-50">
           <div className="flex justify-between items-center mb-4">
             <div className="flex flex-col">
               <Drawer.Title className="font-medium text-xl">
