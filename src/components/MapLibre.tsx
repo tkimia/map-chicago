@@ -123,7 +123,7 @@ export default function MainMap() {
 
       {selectedBoundary && hoveredFeature && mousePoint && (
         <FeatureCard
-          type={selectedBoundary.id}
+          boundaryType={selectedBoundary.id}
           properties={hoveredFeature.properties}
           className="absolute z-10 border-none"
           style={{ left: mousePoint.x, top: mousePoint.y }}
@@ -132,7 +132,7 @@ export default function MainMap() {
       )}
       {selectedBoundary && clickedFeature && clickedPoint && (
         <FeatureCard
-          type={selectedBoundary.id}
+          boundaryType={selectedBoundary.id}
           properties={clickedFeature.properties}
           className="absolute z-10 pointer-events-none border-none"
           style={{ left: clickedPoint.x, top: clickedPoint.y }}

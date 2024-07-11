@@ -15,7 +15,7 @@ import { Button } from "./ui/button";
 
 type Props = {
   boundaryType: Boundary["id"];
-  boundaryName: string;
+  boundaryName?: string;
   properties: Boundary["data"]["features"][0]["properties"];
   onClick?: () => void;
   isActive?: boolean;
@@ -124,9 +124,11 @@ export function FeatureCard({
       style={style}
     >
       <CardHeader>
-        <CardDescription className="uppercase tracking-wider">
-          {boundaryName}
-        </CardDescription>
+        {boundaryName && (
+          <CardDescription className="uppercase tracking-wider">
+            {boundaryName}
+          </CardDescription>
+        )}
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-y-3 w-[350px]">
