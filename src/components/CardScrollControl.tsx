@@ -35,8 +35,9 @@ export function CardScrollControl({ onClickFeature }: Props) {
         if (!feature) return null;
         return (
           <FeatureCard
-            key={boundaryName}
-            type={id}
+            key={id}
+            boundaryType={id}
+            boundaryName={boundaryName}
             properties={feature.properties}
             className="flex-shrink-0"
             isActive={boundaryLayer === id}

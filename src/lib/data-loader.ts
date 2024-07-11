@@ -35,8 +35,9 @@ export const boundaries: Boundary[] = [
   },
   {
     id: "chicago-police",
-    name: "Chicago Police Districts",
-    description: "Boundaries for Chicago Police Districts.",
+    name: "Chicago Police District Councils",
+    description:
+      "Boundaries for Chicago Police Districts. Each district has a 3 member council elected by the people in the district.",
     data: chicagoPoliceDistrictData as FeatureCollection<
       MultiPolygon | Polygon
     >,

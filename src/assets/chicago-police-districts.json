@@ -12,7 +12,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS17",
         "address": "4650 North Pulaski Rd                                                    , \n                            Chicago, IL 60630",
         "phone": "312-742-4410",
-        "email": "CAPS.017District@chicagopolice.org"
+        "email": "CAPS.017District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC017.html",
+        "person_1_name": "Steve Spagnolo",
+        "person_1_title": "Chair",
+        "person_1_email": "Steve.Spagnolo1@cityofchicago.org",
+        "person_2_name": "Elizabeth Rochford",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Elizabeth.Rochford@cityofchicago.org",
+        "person_3_name": "Anthony M. Tamez",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Anthony.Tamez1@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1483,7 +1493,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS20",
         "address": "5400 North Lincoln Avenue                                                     , \n                            Chicago, IL 60625",
         "phone": "312-742-8714,",
-        "email": "CAPS.020District@chicagopolice.org"
+        "email": "CAPS.020District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC020.html",
+        "person_1_name": "Anna Rubin",
+        "person_1_title": "Chair",
+        "person_1_email": "Anna.Rubin@cityofchicago.org",
+        "person_2_name": "Darrell Dacres",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Darrell.Dacres@cityofchicago.org",
+        "person_3_name": "Deirdre O’Connor",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Deirdre.OConnor2@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2544,7 +2564,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS19",
         "address": "850 West Addison St.                                                    , \n                            Chicago, IL 60613",
         "phone": "312-744-8320",
-        "email": "CAPS.019District@chicagopolice.org"
+        "email": "CAPS.019District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC019.html",
+        "person_1_name": "Maurilio Garcia",
+        "person_1_title": "Chair",
+        "person_1_email": "Maurilio.Garcia@cityofchicago.org",
+        "person_2_name": "Samuel E. Schoenburg",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Samuel.Schoenburg@cityofchicago.org",
+        "person_3_name": "Jennifer A. Schaffer",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Jennifer.Schaffer@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4537,7 +4567,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS25",
         "address": "5555 West Grand Ave                                                    , \n                            Chicago, IL 60639",
         "phone": "312-746-8605",
-        "email": "CAPS.025District@chicagopolice.org"
+        "email": "CAPS.025District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC025.html",
+        "person_1_name": "Jacob Arena",
+        "person_1_title": "Chair",
+        "person_1_email": "Jacob.Arena@cityofchicago.org",
+        "person_2_name": "Angelica P. Green",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Angelica.Green@cityofchicago.org",
+        "person_3_name": "Saul Arellano",
+        "person_3_title": "Community Engagements",
+        "person_3_email": "Saul.Arellano@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5564,7 +5604,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS14",
         "address": "2150 North California Ave                                                    , \n                            Chicago, IL 60647",
         "phone": "312-744-8290",
-        "email": "CAPS.014District@chicagopolice.org"
+        "email": "CAPS.014District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC014.html",
+        "person_1_name": "Christopher M. Laurent",
+        "person_1_title": "Chair",
+        "person_1_email": "Christopher.Laurent@cityofchicago.org",
+        "person_2_name": "Ashley Vargas",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Ashley.Vargas2@cityofchicago.org",
+        "person_3_name": "David Orlikoff",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "David.Orlikoff@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6354,7 +6404,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS22",
         "address": "1900 West Monterey Ave                                                    , \n                            Chicago, IL 60643",
         "phone": "312-745-0570",
-        "email": "CAPS.022District@chicagopolice.org"
+        "email": "CAPS.022District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC022.html",
+        "person_1_name": "Patrick Kennedy",
+        "person_1_title": "Chair",
+        "person_1_email": "Patrick.Kennedy@cityofchicago.org",
+        "person_2_name": "Lee Bielecki",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Lee.Bielecki@cityofchicago.org",
+        "person_3_name": "Carisa Parker",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Carisa.Parker@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7567,7 +7627,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS05",
         "address": "727 East 111th St                                                    , \n                            Chicago, IL 60628",
         "phone": "312-747-8210",
-        "email": "CAPS.05District@chicagopolice.org"
+        "email": "CAPS.05District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC005.html",
+        "person_1_name": "Robert A. Mckay",
+        "person_1_title": "Chair",
+        "person_1_email": "Robert.McKay2@cityofchicago.org",
+        "person_2_name": "Thomas L. Mcmahon",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Thomas.McMahon2@cityofchicago.org",
+        "person_3_name": "Ponchita Moore",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Ponchita.Moore@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8700,7 +8770,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS24",
         "address": "6464 North Clark St                                                    , \n                            Chicago, IL 60626",
         "phone": "312-744-5907",
-        "email": "CAPS.024District@chicagopolice.org"
+        "email": "CAPS.024District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC024.html",
+        "person_1_name": "Veronica I. Arreola",
+        "person_1_title": "Chair",
+        "person_1_email": "Veronica.Arreola@cityofchicago.org",
+        "person_2_name": "Marilyn Pagan-Banks",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Marilyn.Pagan-Banks@cityofchicago.org",
+        "person_3_name": "Edvette W. Jones",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Edvette.Jones@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9670,7 +9750,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS16",
         "address": "5151 North Milwaukee Ave                                                    , \n                            Chicago, IL 60630",
         "phone": "312-742-4480",
-        "email": "CAPS.016District@chicagopolice.org"
+        "email": "CAPS.016District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC016.html",
+        "person_1_name": "Daniel Martin",
+        "person_1_title": "Chair",
+        "person_1_email": "Daniel.Martin@cityofchicago.org",
+        "person_2_name": "Colleen Murphy",
+        "person_2_title": "Community Engagement",
+        "person_2_email": "Colleen.Murphy@cityofchicago.org",
+        "person_3_name": "Colleen Mary Dillon",
+        "person_3_title": "Nominating Committee",
+        "person_3_email": "Colleen.Dillon@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13099,7 +13189,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS08",
         "address": "3420 West 63rd St                                                    , \n                            Chicago, IL 60629",
         "phone": "312-747-8730",
-        "email": "CAPS.08District@chicagopolice.org"
+        "email": "CAPS.08District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC008.html",
+        "person_1_name": "Jason Huff",
+        "person_1_title": "Chair",
+        "person_1_email": "Jason.Huff2@cityofchicago.org",
+        "person_2_name": "Albert Cacciottolo",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Albert.Cacciottolo2@cityofchicago.org",
+        "person_3_name": "Mark Hamberlin",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Mark.Hamberlin@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -14246,7 +14346,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS18",
         "address": "1160 North Larrabee Ave                                                    , \n                            Chicago, IL 60610",
         "phone": "312-742-5870",
-        "email": "CAPS.018District@chicagopolice.org"
+        "email": "CAPS.018District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC018.html",
+        "person_1_name": "Brad Kessler",
+        "person_1_title": "Chair",
+        "person_1_email": "Brad.Kessler@cityofchicago.org",
+        "person_2_name": "Robert Johnson",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Robert.Johnson4@cityofchicago.org",
+        "person_3_name": "Karen Kane",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Karen.Kane@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15784,7 +15894,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS12",
         "address": "1412 S. Blue Island                                                    , \n                            Chicago, IL 60608-2112",
         "phone": "312-746-8396",
-        "email": "CAPS.012District@chicagopolice.org"
+        "email": "CAPS.012District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC012.html",
+        "person_1_name": "Leonardo Quintero",
+        "person_1_title": "Chair",
+        "person_1_email": "Leonardo.Quintero@cityofchicago.org",
+        "person_2_name": "Michelle D. Page",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Michelle.Page@cityofchicago.org",
+        "person_3_name": "Chloe Vitale",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Chloe.Vitale@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16659,7 +16779,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS11",
         "address": "3151 West Harrison St                                                    , \n                            Chicago, IL 60612",
         "phone": "312-746-8386",
-        "email": "CAPS.011District@chicagopolice.org"
+        "email": "CAPS.011District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC011.html",
+        "person_1_name": "Bryan Ramson, Jr.",
+        "person_1_title": "Chair",
+        "person_1_email": "Bryan.RamsonJr@cityofchicago.org",
+        "person_2_name": "Jocelyn A. Woodards",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Jocelyn.Woodards@cityofchicago.org",
+        "person_3_name": "Alees Edwards",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Alees.Edwards@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17420,7 +17550,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS07",
         "address": "1438 W. 63rd Street                                                    , \n                            Chicago, IL 60636",
         "phone": "312-747-8220",
-        "email": "CAPS.07District@chicagopolice.org"
+        "email": "CAPS.07District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC007.html",
+        "person_1_name": "Teresa Chandler",
+        "person_1_title": "Chair",
+        "person_1_email": "Teresa.Chandler@cityofchicago.org",
+        "person_2_name": "Dion T. McGill",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Dion.McGill@cityofchicago.org",
+        "person_3_name": "Joseph Williams",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Joseph.Williams@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17907,7 +18047,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS03",
         "address": "7040 South Cottage Grove Ave                                                    , \n                            Chicago, IL 60637",
         "phone": "312-747-8201",
-        "email": "CAPS.03District@chicagopolice.org"
+        "email": "CAPS.03District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC003.html",
+        "person_1_name": "Kenya Franklin",
+        "person_1_title": "Chair",
+        "person_1_email": "Kenya.Franklin@cityofchicago.org",
+        "person_2_name": "Anthony D. Bryant",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Anthony.Bryant@cityofchicago.org",
+        "person_3_name": "Janice Jones",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Janice.Jones@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19258,7 +19408,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS04",
         "address": "2255 East 103rd St                                                    , \n                            Chicago, IL 60617",
         "phone": "312-747-8205",
-        "email": "CAPS.04District@chicagopolice.org"
+        "email": "CAPS.04District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC004.html",
+        "person_1_name": "Lovie Benard",
+        "person_1_title": "Chair",
+        "person_1_email": "Lovie.Benard@cityofchicago.org",
+        "person_2_name": "Gloria Jenkins",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Gloria.Jenkins2@cityofchicago.org",
+        "person_3_name": "Brenda Waters",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Brenda.Waters@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21210,7 +21370,14 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS06",
         "address": "7808 South Halsted Street                                                    , \n                            Chicago, IL 60620",
         "phone": "312-745-3610/CAPS",
-        "email": "CAPS.06District@chicagopolice.org"
+        "email": "CAPS.06District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC006.html",
+        "person_1_name": "David Boykin",
+        "person_1_title": "Chair",
+        "person_1_email": "David.Boykin@cityofchicago.org ",
+        "person_2_name": "Aisha Humphries",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Aisha.Humphries@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21776,7 +21943,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS10",
         "address": "3315 West Ogden Avenue                                                    , \n                            Chicago, IL 60623",
         "phone": "312-747-7511",
-        "email": "CAPS.010District@chicagopolice.org"
+        "email": "CAPS.010District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC010.html",
+        "person_1_name": "Kiisha Smith",
+        "person_1_title": "Chair",
+        "person_1_email": "Kiisha.Smith@cityofchicago.org",
+        "person_2_name": "Elianne Bahena",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Elianne.Bahena2@cityofchicago.org",
+        "person_3_name": "Rosemarie Dominguez",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Rosemarie.Dominguez@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22365,7 +22542,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS01",
         "address": "1718 South State Street                                                    , \n                            Chicago, IL 60616",
         "phone": "312-745-4290",
-        "email": "CAPS.01District@chicagopolice.org"
+        "email": "CAPS.01District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC001.html",
+        "person_1_name": "Sarah Kammerer",
+        "person_1_title": "Chair",
+        "person_1_email": "Sarah.Kammerer@cityofchicago.org",
+        "person_2_name": "Adrienne Johnson",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Adrienne.Johnson@cityofchicago.org",
+        "person_4_name": "Jamie Brown",
+        "person_4_title": "Community Engagement",
+        "person_4_email": "Jamie.Brown@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23950,7 +24137,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS09",
         "address": "3120 S. Halsted St.                                                    , \n                            Chicago, IL 60608",
         "phone": "312-747-8227",
-        "email": "CAPS.09District@chicagopolice.org"
+        "email": "CAPS.09District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC009.html",
+        "person_1_name": "Carlos Sanchez",
+        "person_1_title": "Chair",
+        "person_1_email": "Carlos.Sanchez2@cityofchicago.org",
+        "person_2_name": "Denise E. McBroom",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Denise.McBroom2@cityofchicago.org",
+        "person_3_name": "Erin Vogel",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Erin.Vogel@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24804,7 +25001,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS02",
         "address": "5101 South Wentworth Avenue                                                    , \n                            Chicago, IL 60609",
         "phone": "312-747-8366",
-        "email": "CAPS.02District@chicagopolice.org"
+        "email": "CAPS.02District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC002.html",
+        "person_1_name": "Alexander J. Perez",
+        "person_1_title": "Chair",
+        "person_1_email": "Alexander.Perez@cityofchicago.org",
+        "person_2_name": "Ephraim Lee",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Ephraim.Lee@cityofchicago.org",
+        "person_3_name": "Julia Kline",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Julia.Kline@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26400,7 +26607,17 @@
         "twitterUrl": "https://www.twitter.com/ChicagoCAPS15",
         "address": "5701 West Madison Ave                                                    , \n                            Chicago, IL 60644",
         "phone": "312-743-1440",
-        "email": "CAPS.015District@chicagopolice.org"
+        "email": "CAPS.015District@chicagopolice.org",
+        "ccpsaUrl": "https://www.chicago.gov/city/en/depts/ccpsa/supp_info/district-council-pages/DC015.html",
+        "person_1_name": "Carmelita Earls",
+        "person_1_title": "Chair",
+        "person_1_email": "Carmelita.Earls@cityofchicago.org",
+        "person_2_name": "Karen Winters",
+        "person_2_title": "Nominating Committee",
+        "person_2_email": "Karen.Winters@cityofchicago.org",
+        "person_3_name": "Deondre Rutues",
+        "person_3_title": "Community Engagement",
+        "person_3_email": "Deondre.Rutues@cityofchicago.org"
       },
       "geometry": {
         "type": "MultiPolygon",

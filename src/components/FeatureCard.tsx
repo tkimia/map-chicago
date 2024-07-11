@@ -1,14 +1,21 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { Phone, Mail, Home, ExternalLink, Map } from "lucide-react";
+import { Phone, Mail, Home, ExternalLink, Map, User } from "lucide-react";
 import { Boundary } from "@/lib/data-loader";
 import { CSSProperties } from "react";
 import { Button } from "./ui/button";
 
 type Props = {
-  type: Boundary["id"];
+  boundaryType: Boundary["id"];
+  boundaryName: string;
   properties: Boundary["data"]["features"][0]["properties"];
   onClick?: () => void;
   isActive?: boolean;
@@ -18,7 +25,8 @@ type Props = {
 };
 
 export function FeatureCard({
-  type,
+  boundaryType,
+  boundaryName,
   properties,
   className,
   onClick,
@@ -27,25 +35,47 @@ export function FeatureCard({
   isActive = false,
 }: Props) {
   let title: string;
-  let image = properties?.image;
-  let name = properties?.name;
-  let phone = properties?.phone as string | undefined;
-  let email = properties?.email as string | undefined;
-  let address = properties?.address as string | undefined;
+  let people: {
+    name?: string;
+    phone?: string;
+    email?: string;
+    title?: string;
+    address?: string;
+    image?: string;
+  }[] = [
+    {
+      image: properties?.image ?? "",
+      name: properties?.name,
+      phone: properties?.phone as string | undefined,
+      email: properties?.email as string | undefined,
+      address: properties?.address as string | undefined,
+    },
+  ];
   let candidates: { name: string; url?: string }[] | undefined = undefined;
-  const website: string | undefined = properties?.website;
+  let website: string | undefined = properties?.website;
 
-  switch (type) {
+  switch (boundaryType) {
     case "cook-commissioners":
       title = `District ${properties?.DISTRICT_TXT}`;
       break;
     case "wards":
       title = `Ward ${properties?.ward}`;
       break;
-    case "chicago-police":
-      title = `${properties?.dist_label?.toLowerCase()} District`;
-      image = properties?.image ?? "";
+    case "chicago-police": {
+      title = `${properties?.dist_label?.toLowerCase()} District Council`;
+      let i = 1;
+      people = [];
+      while (properties && `person_${i}_name` in properties) {
+        people.push({
+          name: properties[`person_${i}_name`],
+          email: properties[`person_${i}_email`],
+          title: properties[`person_${i}_title`],
+        });
+        i++;
+      }
+      website = properties?.ccpsaUrl;
       break;
+    }
     case "chicago-school": {
       title = `District ${properties?.elec_dist}`;
       let i = 1;
@@ -67,11 +97,15 @@ export function FeatureCard({
         typeof properties?.person === "string"
           ? JSON.parse(properties.person)
           : properties?.person;
-      image = person?.image ?? "";
-      name = person?.name;
-      phone = person?.phone as string | undefined;
-      email = person?.email as string | undefined;
-      address = person?.address as string | undefined;
+      people = [
+        {
+          image: person?.image ?? "",
+          name: person?.name,
+          phone: person?.phone as string | undefined,
+          email: person?.email as string | undefined,
+          address: person?.address as string | undefined,
+        },
+      ];
       break;
   }
 
@@ -89,76 +123,90 @@ export function FeatureCard({
       )}
       style={style}
     >
-      <CardContent className="flex flex-row justify-center gap-4 p-4 w-[350px]">
-        <div className="flex flex-col h-full justify-center items-center space-y-2">
-          <Avatar className="h-16 w-16">
-            <AvatarImage src={image} className="object-cover" />
-            <AvatarFallback className="text-black">?</AvatarFallback>
-          </Avatar>
-          {name && (
-            <p className="text-center text-sm font-bold max-w-24">{name}</p>
-          )}
-        </div>
-        <div className="flex flex-col space-y-1 h-full grow">
-          <h2 className="text-lg font-semibold">{title}</h2>
-          <div className="grid grid-cols-10 place-content-center">
-            {phone && (
-              <>
-                <Phone size={16} className="col-span-1" />
-                <p className="col-span-9">{phone}</p>
-              </>
-            )}
-            {email && (
-              <>
-                <Mail size={16} className="col-span-1" />
-                <p className="col-span-9">{email}</p>
-              </>
-            )}
-            {address && (
-              <>
-                <Home size={16} className="col-span-1" />
-                <p className="col-span-9 text-wrap">{address}</p>
-              </>
-            )}
-          </div>
-          {candidates && (
-            <>
-              <p className="text-wrap text-xs italic">
-                School board candidates for this district:
-              </p>
-              <ul>
-                {candidates.map((candidate) =>
-                  candidate.url ? (
-                    <li key={candidate.name}>
-                      <a
-                        href={candidate.url}
-                        className="text-blue-600 underline flex"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {candidate.name}{" "}
-                        <ExternalLink className="ml-1" size={12} />
-                      </a>
-                    </li>
-                  ) : (
-                    <li key={candidate.name}>{candidate.name}</li>
-                  )
+      <CardHeader>
+        <CardDescription className="uppercase tracking-wider">
+          {boundaryName}
+        </CardDescription>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-y-3 w-[350px]">
+        {people.map((person) => (
+          <div className="flex flex-row justify-center items-center gap-4">
+            <Avatar className="h-16 w-16">
+              <AvatarImage src={person.image} className="object-cover" />
+              <AvatarFallback className="text-black">
+                <User />
+              </AvatarFallback>
+            </Avatar>
+            <div className="flex flex-col space-y-1 grow">
+              <div className="grid grid-cols-10 place-content-center items-center">
+                {person.name && (
+                  <p className="col-span-10 font-bold">{person.name}</p>
                 )}
-              </ul>
-            </>
-          )}
-        </div>
+                {person.title && (
+                  <>
+                    <p className="col-span-10 text-sm italic">{person.title}</p>
+                  </>
+                )}
+                {person.phone && (
+                  <>
+                    <Phone size={16} className="col-span-1" />
+                    <p className="col-span-9">{person.phone}</p>
+                  </>
+                )}
+                {person.email && (
+                  <>
+                    <Mail size={16} className="col-span-1" />
+                    <p className="col-span-9">{person.email}</p>
+                  </>
+                )}
+                {person.address && (
+                  <>
+                    <Home size={16} className="col-span-1" />
+                    <p className="col-span-9 text-wrap">{person.address}</p>
+                  </>
+                )}
+              </div>
+              {candidates && (
+                <>
+                  <p className="text-wrap text-xs italic">
+                    School board candidates for this district:
+                  </p>
+                  <ul>
+                    {candidates.map((candidate) =>
+                      candidate.url ? (
+                        <li key={candidate.name}>
+                          <a
+                            href={candidate.url}
+                            className="text-blue-600 underline flex"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {candidate.name}{" "}
+                            <ExternalLink className="ml-1" size={12} />
+                          </a>
+                        </li>
+                      ) : (
+                        <li key={candidate.name}>{candidate.name}</li>
+                      )
+                    )}
+                  </ul>
+                </>
+              )}
+            </div>
+          </div>
+        ))}
       </CardContent>
       <CardFooter className="flex justify-end space-x-3">
         {website && (
           <a href={website} target="_blank" rel="noreferrer">
-            <Button size="sm">
+            <Button type="button" size="sm">
               <ExternalLink size={16} className="mr-2" />
               Website
             </Button>
           </a>
         )}
-        <Button size="sm" onClick={onClick} disabled={isActive}>
+        <Button type="button" size="sm" onClick={onClick} disabled={isActive}>
           <Map size={16} className="mr-2" />
           Map
         </Button>
