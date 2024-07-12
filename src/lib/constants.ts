@@ -1,5 +1,6 @@
-export const MAIN_SOURCE = "main-source";
-export const MAIN_LAYER = "main-layer";
+export function toLayerId(sourceId: string) {
+  return `${sourceId}-layer`;
+}
 
 export const CHICAGO_COORDINATES = [41.8781, -87.6298] as const;
 

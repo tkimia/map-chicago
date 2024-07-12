@@ -133,7 +133,10 @@ export function FeatureCard({
       </CardHeader>
       <CardContent className="flex flex-col gap-y-3 w-[350px]">
         {people.map((person) => (
-          <div className="flex flex-row justify-center items-center gap-4">
+          <div
+            key={`${person.name} + ${person.title}`}
+            className="flex flex-row justify-center items-center gap-4"
+          >
             <Avatar className="h-16 w-16">
               <AvatarImage src={person.image} className="object-cover" />
               <AvatarFallback className="text-black">

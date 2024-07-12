@@ -12,8 +12,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import {
   CHICAGO_COORDINATES,
   DEFAULT_STYLE,
-  MAIN_LAYER,
-  MAIN_SOURCE,
+  toLayerId,
 } from "../lib/constants";
 import AddressSearch from "./AddressSearch";
 import useMapHoverState from "@/hooks/useMapHoverState";
@@ -39,11 +38,7 @@ export default function MainMap() {
     setClickedFeature,
     clickedFeature,
     clickedPoint,
-  } = useMapHoverState({
-    sourceId: MAIN_SOURCE,
-    layerId: MAIN_LAYER,
-    selectedBoundaryId: selectedBoundary?.id,
-  });
+  } = useMapHoverState();
 
   return (
     <Map
@@ -53,7 +48,7 @@ export default function MainMap() {
         zoom: 11,
       }}
       mapStyle={"gl-style/style.json"}
-      interactiveLayerIds={[MAIN_LAYER]}
+      interactiveLayerIds={boundaries.map((b) => toLayerId(b.id))}
       {...events}
     >
       {!mode && (
@@ -100,31 +95,37 @@ export default function MainMap() {
           anchor="bottom"
         />
       )}
-      {selectedBoundary && (
-        <Source id={MAIN_SOURCE} type="geojson" data={selectedBoundary.data}>
-          <Layer
-            source={MAIN_SOURCE}
-            id={MAIN_LAYER}
-            type="fill"
-            paint={{
-              "fill-outline-color": "white",
-              "fill-opacity": [
-                "case",
-                ["boolean", ["feature-state", "hover"], false],
-                1,
-                0.5,
-              ],
-              "fill-color": [
-                "case",
-                ["boolean", ["feature-state", "clicked"], false],
-                "yellow",
-                DEFAULT_STYLE.fillColor,
-              ],
-            }}
-          />
+      {boundaries.map((boundary) => (
+        <Source
+          key={boundary.id}
+          id={boundary.id}
+          type="geojson"
+          data={boundary.data}
+        >
+          {selectedBoundary === boundary && (
+            <Layer
+              source={boundary.id}
+              id={toLayerId(boundary.id)}
+              type="fill"
+              paint={{
+                "fill-outline-color": "white",
+                "fill-opacity": [
+                  "case",
+                  ["boolean", ["feature-state", "hover"], false],
+                  1,
+                  0.5,
+                ],
+                "fill-color": [
+                  "case",
+                  ["boolean", ["feature-state", "clicked"], false],
+                  "yellow",
+                  DEFAULT_STYLE.fillColor,
+                ],
+              }}
+            />
+          )}
         </Source>
-      )}
-
+      ))}
       {selectedBoundary && hoveredFeature && mousePoint && (
         <FeatureCard
           boundaryType={selectedBoundary.id}

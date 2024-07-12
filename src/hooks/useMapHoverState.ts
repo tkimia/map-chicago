@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   MapGeoJSONFeature,
   MapLayerMouseEvent,
@@ -8,11 +8,7 @@ import {
   Point,
 } from "react-map-gl/maplibre";
 
-export default function useMapHoverState(opts: {
-  sourceId: string;
-  layerId: string;
-  selectedBoundaryId?: string;
-}) {
+export default function useMapHoverState() {
   const [hoveredFeature, setHoveredFeature] =
     useState<MapGeoJSONFeature | null>(null);
 
@@ -22,27 +18,25 @@ export default function useMapHoverState(opts: {
   const [point, setPoint] = useState<Point | null>(null);
   const [clickedPoint, setClickedPoint] = useState<Point | null>(null);
 
-  useEffect(() => {
-    _setClickedFeature(null);
-    setClickedPoint(null);
-  }, [opts.selectedBoundaryId]);
-
   const setClickedFeature = (
     map: Omit<MapRef, "getMap">,
     feature: MapGeoJSONFeature
   ) => {
     if (clickedFeature) {
       map.setFeatureState(
-        { source: opts.sourceId, id: clickedFeature.id as string },
+        {
+          source: clickedFeature.layer.source,
+          id: clickedFeature.id as string,
+        },
         { clicked: false }
       );
       setClickedPoint(null);
     }
 
     _setClickedFeature(feature);
-    if (!map.getSource(opts.sourceId)) return;
+    if (!feature.layer?.source) return;
     map.setFeatureState(
-      { source: opts.sourceId, id: feature.id as string },
+      { source: feature.layer.source, id: feature.id as string },
       { clicked: true }
     );
 
@@ -54,22 +48,32 @@ export default function useMapHoverState(opts: {
   const onMouseMove = (e: MapLayerMouseEvent) => {
     if (!e.features?.length) return;
     const map = e.target;
+    const newHoveredFeature = e.features[0];
+    const source = newHoveredFeature.layer.source;
     if (hoveredFeature) {
       map.setFeatureState(
-        { source: opts.sourceId, id: hoveredFeature.id as string },
+        {
+          source,
+          id: hoveredFeature.id as string,
+        },
         { hover: false }
       );
     }
-    const newId = e.features[0].id as string;
-    map.setFeatureState({ source: opts.sourceId, id: newId }, { hover: true });
-    setHoveredFeature(e.features[0]);
+    map.setFeatureState(
+      { source: source, id: newHoveredFeature.id },
+      { hover: true }
+    );
+    setHoveredFeature(newHoveredFeature);
     setPoint(e.point);
   };
 
   const onMouseLeave = (e: MapLayerMouseEvent) => {
     if (hoveredFeature) {
       e.target.setFeatureState(
-        { source: opts.sourceId, id: hoveredFeature.id as string },
+        {
+          source: hoveredFeature.layer.source,
+          id: hoveredFeature.id as string,
+        },
         { hover: false }
       );
     }
@@ -111,7 +115,7 @@ export default function useMapHoverState(opts: {
           const id = feature.id as string;
           if (id === clickedFeature?.id) {
             e.target.setFeatureState(
-              { source: opts.sourceId, id },
+              { source: e.sourceId, id },
               { clicked: true }
             );
           }
