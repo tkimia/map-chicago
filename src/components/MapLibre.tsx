@@ -43,7 +43,7 @@ export default function MainMap() {
         zoom: 11,
       }}
       mapStyle={"gl-style/style.json"}
-      interactiveLayerIds={boundaries.map((b) => toLayerId(b.id))}
+      interactiveLayerIds={boundaries.flatMap((b) => toLayerId(b.id))}
       {...events}
     >
       {!mode && (

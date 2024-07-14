@@ -1,4 +1,4 @@
-import { toLayerId } from "@/lib/constants";
+import { toCentroidLayerId, toLayerId, toLineLayerId } from "@/lib/constants";
 import { boundaries, Boundary } from "@/lib/data-loader";
 import { Source, Layer } from "react-map-gl/maplibre";
 import { centroid } from "@turf/centroid";
@@ -53,11 +53,21 @@ export default function SourcesAndLayers({ selectedBoundary }: Props) {
             />
             <Layer
               source={boundary.id}
-              id={`${toLayerId(boundary.id)}-hover`}
+              id={toLineLayerId(boundary.id)}
               type="line"
               paint={{
-                "line-color": "blue",
-                "line-width": 2,
+                "line-color": [
+                  "case",
+                  ["boolean", ["feature-state", "hover"], false],
+                  "purple",
+                  "blue",
+                ],
+                "line-width": [
+                  "case",
+                  ["boolean", ["feature-state", "hover"], false],
+                  4,
+                  2,
+                ],
                 "line-dasharray": [2, 4],
               }}
             />
@@ -72,7 +82,7 @@ export default function SourcesAndLayers({ selectedBoundary }: Props) {
         {selectedBoundary === boundary && (
           <Layer
             source={boundary.id + "centroid"}
-            id={toLayerId(boundary.id) + "centroid"}
+            id={toCentroidLayerId(boundary.id)}
             type="symbol"
             layout={{
               "text-field": ["get", "label"],
@@ -81,7 +91,12 @@ export default function SourcesAndLayers({ selectedBoundary }: Props) {
               "text-anchor": "top",
             }}
             paint={{
-              "text-color": "blue",
+              "text-color": [
+                "case",
+                ["boolean", ["feature-state", "hover"], false],
+                "purple",
+                "blue",
+              ],
               "text-halo-color": "white",
               "text-halo-width": 3,
             }}

@@ -61,9 +61,20 @@ export default function useMapHoverState() {
         },
         { hover: false }
       );
+      map.setFeatureState(
+        {
+          source: `${source}centroid`,
+          id: hoveredFeature.id as string,
+        },
+        { hover: false }
+      );
     }
     map.setFeatureState(
       { source: source, id: newHoveredFeature.id },
+      { hover: true }
+    );
+    map.setFeatureState(
+      { source: `${source}centroid`, id: newHoveredFeature.id },
       { hover: true }
     );
     setHoveredFeature(newHoveredFeature);
@@ -75,6 +86,13 @@ export default function useMapHoverState() {
       e.target.setFeatureState(
         {
           source: hoveredFeature.layer.source,
+          id: hoveredFeature.id as string,
+        },
+        { hover: false }
+      );
+      e.target.setFeatureState(
+        {
+          source: hoveredFeature.layer.source + "centroid",
           id: hoveredFeature.id as string,
         },
         { hover: false }
