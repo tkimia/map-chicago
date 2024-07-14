@@ -3,11 +3,14 @@ import useUserChoices from "@/hooks/useUserChoices";
 import { point } from "@turf/helpers";
 import booleanPointInPolygon from "@turf/boolean-point-in-polygon";
 import { FeatureCard } from "./FeatureCard";
-import { MapGeoJSONFeature, Map } from "maplibre-gl";
-import { useMap } from "react-map-gl/maplibre";
+import { MapGeoJSONFeature } from "maplibre-gl";
+import { MapRef, useMap } from "react-map-gl/maplibre";
 
 type Props = {
-  onClickFeature: (map: Map, feature: MapGeoJSONFeature) => void;
+  onClickFeature: (
+    map: Omit<MapRef, "getMap">,
+    feature: MapGeoJSONFeature
+  ) => void;
 };
 
 export function CardScrollControl({ onClickFeature }: Props) {
