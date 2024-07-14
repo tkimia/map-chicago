@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { cn } from "@/lib/utils";
+import { cn, getTitle } from "@/lib/utils";
 import { Phone, Mail, Home, ExternalLink, Map, User } from "lucide-react";
 import { Boundary } from "@/lib/data-loader";
 import { CSSProperties } from "react";
@@ -34,7 +34,7 @@ export function FeatureCard({
   style,
   isActive = false,
 }: Props) {
-  let title: string;
+  const title: string = getTitle(boundaryType, properties);
   let people: {
     name?: string;
     phone?: string;
@@ -55,14 +55,7 @@ export function FeatureCard({
   let website: string | undefined = properties?.website;
 
   switch (boundaryType) {
-    case "cook-commissioners":
-      title = `District ${properties?.DISTRICT_TXT}`;
-      break;
-    case "wards":
-      title = `Ward ${properties?.ward}`;
-      break;
     case "chicago-police": {
-      title = `${properties?.dist_label?.toLowerCase()} District Council`;
       let i = 1;
       people = [];
       while (properties && `person_${i}_name` in properties) {
@@ -77,7 +70,6 @@ export function FeatureCard({
       break;
     }
     case "chicago-school": {
-      title = `District ${properties?.elec_dist}`;
       let i = 1;
       while (properties && `candidate_${i}` in properties) {
         candidates = candidates ?? [];
@@ -91,7 +83,6 @@ export function FeatureCard({
     }
     case "illinois-house":
     case "illinois-senate":
-      title = properties?.name;
       // eslint-disable-next-line no-case-declarations
       const person =
         typeof properties?.person === "string"

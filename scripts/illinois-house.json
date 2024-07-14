@@ -100,7 +100,7 @@
       { "lng": -87.7127, "lat": 41.77862 },
       { "lng": -87.71257, "lat": 41.772 }
     ],
-    "name": "House District 1",
+    "name": "House District  1",
     "slug": "house-district-1",
     "person": {
       "id": 35938,
@@ -188,7 +188,7 @@
       { "lng": -87.83165, "lat": 41.79719 },
       { "lng": -87.82972, "lat": 41.79661 }
     ],
-    "name": "House  District 2",
+    "name": "House District  2",
     "slug": "house-district-2",
     "person": {
       "id": 35952,
@@ -290,7 +290,7 @@
       { "lng": -87.76381, "lat": 41.93177 },
       { "lng": -87.76504, "lat": 41.93175 }
     ],
-    "name": "House  District 3",
+    "name": "House District  3",
     "slug": "house-district-3",
     "person": {
       "id": 54705,
@@ -389,7 +389,7 @@
       { "lng": -87.68181, "lat": 41.89075 },
       { "lng": -87.68179, "lat": 41.89033 }
     ],
-    "name": "House  District 4",
+    "name": "House District  4",
     "slug": "house-district-4",
     "person": {
       "id": 68839,
@@ -539,7 +539,7 @@
       { "lng": -87.60553, "lat": 41.76398 },
       { "lng": -87.59572, "lat": 41.75686 }
     ],
-    "name": "House  District 5",
+    "name": "House District  5",
     "slug": "house-district-5",
     "person": {
       "id": 69837,
@@ -658,7 +658,7 @@
       { "lng": -87.68833, "lat": 41.77191 },
       { "lng": -87.68832, "lat": 41.77138 }
     ],
-    "name": "House    District 6",
+    "name": "House District  6",
     "slug": "house-district-6",
     "person": {
       "id": 35993,
@@ -797,7 +797,7 @@
       { "lng": -87.95662, "lat": 41.83441 },
       { "lng": -87.95537, "lat": 41.83234 }
     ],
-    "name": "House    District 7",
+    "name": "House District  7",
     "slug": "house-district-7",
     "person": {
       "id": 36004,
@@ -962,7 +962,7 @@
       { "lng": -87.88203, "lat": 41.76378 },
       { "lng": -87.88193, "lat": 41.76085 }
     ],
-    "name": "House    District 8",
+    "name": "House District  8",
     "slug": "house-district-8",
     "person": {
       "id": 36015,
@@ -1084,7 +1084,7 @@
       { "lng": -87.73985, "lat": 41.86032 },
       { "lng": -87.73942, "lat": 41.85135 }
     ],
-    "name": "House    District 9",
+    "name": "House District  9",
     "slug": "house-district-9",
     "person": {
       "id": 71035,
@@ -1213,7 +1213,7 @@
       { "lng": -87.74026, "lat": 41.87691 },
       { "lng": -87.73999, "lat": 41.86894 }
     ],
-    "name": "House    District    10",
+    "name": "House District  10",
     "slug": "house-district-10",
     "person": {
       "id": 39683,
@@ -1313,7 +1313,7 @@
       { "lng": -87.65337, "lat": 41.93992 },
       { "lng": -87.65411, "lat": 41.93992 }
     ],
-    "name": "House    District 11",
+    "name": "House District  11",
     "slug": "house-district-11",
     "person": {
       "id": 35930,
@@ -1430,7 +1430,7 @@
       { "lng": -87.63745, "lat": 41.90381 },
       { "lng": -87.63713, "lat": 41.89476 }
     ],
-    "name": "House    District 12",
+    "name": "House District  12",
     "slug": "house-district-12",
     "person": {
       "id": 35939,
@@ -1578,7 +1578,7 @@
       { "lng": -87.66774, "lat": 41.95066 },
       { "lng": -87.66773, "lat": 41.95021 }
     ],
-    "name": "House    District 13",
+    "name": "House District  13",
     "slug": "house-district-13",
     "person": {
       "id": 68836,
@@ -1699,7 +1699,7 @@
       { "lng": -87.66842, "lat": 41.97619 },
       { "lng": -87.65987, "lat": 41.97633 }
     ],
-    "name": "House    District 14",
+    "name": "House District  14",
     "slug": "house-district-14",
     "person": {
       "id": 35941,
@@ -1887,7 +1887,7 @@
       { "lng": -87.74646, "lat": 41.96074 },
       { "lng": -87.73272, "lat": 41.9609 }
     ],
-    "name": "House    District 15",
+    "name": "House District  15",
     "slug": "house-district-15",
     "person": {
       "id": 35942,
@@ -2006,7 +2006,7 @@
       { "lng": -87.68955, "lat": 41.98682 },
       { "lng": -87.68922, "lat": 41.97771 }
     ],
-    "name": "House    District 16",
+    "name": "House District  16",
     "slug": "house-district-16",
     "person": {
       "id": 68852,
@@ -2154,7 +2154,7 @@
       { "lng": -87.74724, "lat": 42.03532 },
       { "lng": -87.74729, "lat": 42.0337 }
     ],
-    "name": "House    District 17",
+    "name": "House District  17",
     "slug": "house-district-17",
     "person": {
       "id": 35944,
@@ -2404,7 +2404,7 @@
       { "lng": -87.69498, "lat": 42.01306 },
       { "lng": -87.69495, "lat": 42.00495 }
     ],
-    "name": "House    District 18",
+    "name": "House District  18",
     "slug": "house-district-18",
     "person": {
       "id": 68826,
@@ -2545,7 +2545,7 @@
       { "lng": -87.80345, "lat": 41.94897 },
       { "lng": -87.80305, "lat": 41.93851 }
     ],
-    "name": "House    District 19",
+    "name": "House District  19",
     "slug": "house-district-19",
     "person": {
       "id": 35946,
@@ -2681,7 +2681,7 @@
       { "lng": -87.85749, "lat": 41.9302 },
       { "lng": -87.85464, "lat": 41.92255 }
     ],
-    "name": "House    District 20",
+    "name": "House District  20",
     "slug": "house-district-20",
     "person": {
       "id": 35947,
@@ -2852,7 +2852,7 @@
       { "lng": -87.78203, "lat": 41.79967 },
       { "lng": -87.78934, "lat": 41.79957 }
     ],
-    "name": "House    District    21",
+    "name": "House District  21",
     "slug": "house-district-21",
     "person": {
       "id": 68855,
@@ -2932,7 +2932,7 @@
       { "lng": -87.80656, "lat": 41.737 },
       { "lng": -87.80413, "lat": 41.73705 }
     ],
-    "name": "House    District 22",
+    "name": "House District  22",
     "slug": "house-district-22",
     "person": {
       "id": 35950,
@@ -3012,7 +3012,7 @@
       { "lng": -87.71432, "lat": 41.82145 },
       { "lng": -87.71388, "lat": 41.80818 }
     ],
-    "name": "House    District 23",
+    "name": "House District  23",
     "slug": "house-district-23",
     "person": {
       "id": 35948,
@@ -3120,7 +3120,7 @@
       { "lng": -87.67245, "lat": 41.81581 },
       { "lng": -87.67227, "lat": 41.80898 }
     ],
-    "name": "House    District 24",
+    "name": "House District  24",
     "slug": "house-district-24",
     "person": {
       "id": 39688,
@@ -3329,7 +3329,7 @@
       { "lng": -87.53765, "lat": 41.68095 },
       { "lng": -87.53353, "lat": 41.68093 }
     ],
-    "name": "House    District 25",
+    "name": "House District  25",
     "slug": "house-district-25",
     "person": {
       "id": 35953,
@@ -3603,7 +3603,7 @@
       { "lng": -87.55632, "lat": 41.73914 },
       { "lng": -87.5563, "lat": 41.7378 }
     ],
-    "name": "House    District 26",
+    "name": "House District  26",
     "slug": "house-district-26",
     "person": {
       "id": 35954,
@@ -3813,7 +3813,7 @@
       { "lng": -87.83081, "lat": 41.57123 },
       { "lng": -87.83009, "lat": 41.57098 }
     ],
-    "name": "House    District 27",
+    "name": "House District  27",
     "slug": "house-district-27",
     "person": {
       "id": 39689,
@@ -4002,7 +4002,7 @@
       { "lng": -87.83202, "lat": 41.5671 },
       { "lng": -87.83178, "lat": 41.56093 }
     ],
-    "name": "House    District 28",
+    "name": "House District  28",
     "slug": "house-district-28",
     "person": {
       "id": 35956,
@@ -4308,7 +4308,7 @@
       { "lng": -87.77834, "lat": 41.13414 },
       { "lng": -87.7783, "lat": 41.13065 }
     ],
-    "name": "House    District 29",
+    "name": "House District  29",
     "slug": "house-district-29",
     "person": {
       "id": 35957,
@@ -4472,7 +4472,7 @@
       { "lng": -87.69432, "lat": 41.5135 },
       { "lng": -87.69756, "lat": 41.50733 }
     ],
-    "name": "House    District 30",
+    "name": "House District  30",
     "slug": "house-district-30",
     "person": {
       "id": 35958,
@@ -4653,7 +4653,7 @@
       { "lng": -87.83696, "lat": 41.71091 },
       { "lng": -87.82729, "lat": 41.71107 }
     ],
-    "name": "House    District 31",
+    "name": "House District  31",
     "slug": "house-district-31",
     "person": {
       "id": 35959,
@@ -4795,7 +4795,7 @@
       { "lng": -87.81341, "lat": 41.72771 },
       { "lng": -87.81313, "lat": 41.72046 }
     ],
-    "name": "House    District 32",
+    "name": "House District  32",
     "slug": "house-district-32",
     "person": {
       "id": 68715,
@@ -4925,7 +4925,7 @@
       { "lng": -87.53908, "lat": 41.53118 },
       { "lng": -87.53904, "lat": 41.52827 }
     ],
-    "name": "House    District 33",
+    "name": "House District  33",
     "slug": "house-district-33",
     "person": {
       "id": 35962,
@@ -5268,7 +5268,7 @@
       { "lng": -87.84995, "lat": 41.04682 },
       { "lng": -87.85003, "lat": 41.04608 }
     ],
-    "name": "House    District 34",
+    "name": "House District  34",
     "slug": "house-district-34",
     "person": {
       "id": 47488,
@@ -5423,7 +5423,7 @@
       { "lng": -87.85328, "lat": 41.62325 },
       { "lng": -87.85128, "lat": 41.62318 }
     ],
-    "name": "House    District 35",
+    "name": "House District  35",
     "slug": "house-district-35",
     "person": {
       "id": 70368,
@@ -5561,7 +5561,7 @@
       { "lng": -87.9128, "lat": 41.67255 },
       { "lng": -87.91292, "lat": 41.67254 }
     ],
-    "name": "House    District 36",
+    "name": "House District  36",
     "slug": "house-district-36",
     "person": {
       "id": 35965,
@@ -5682,7 +5682,7 @@
       { "lng": -87.90743, "lat": 41.49843 },
       { "lng": -87.90743, "lat": 41.49829 }
     ],
-    "name": "House    District 37",
+    "name": "House District  37",
     "slug": "house-district-37",
     "person": {
       "id": 68854,
@@ -5832,7 +5832,7 @@
       { "lng": -87.82614, "lat": 41.46997 },
       { "lng": -87.7289, "lat": 41.46971 }
     ],
-    "name": "House    District 38",
+    "name": "House District  38",
     "slug": "house-district-38",
     "person": {
       "id": 49983,
@@ -5909,7 +5909,7 @@
       { "lng": -87.67759, "lat": 41.91624 },
       { "lng": -87.67758, "lat": 41.91595 }
     ],
-    "name": "House    District 39",
+    "name": "House District  39",
     "slug": "house-district-39",
     "person": {
       "id": 35968,
@@ -6009,7 +6009,7 @@
       { "lng": -87.69041, "lat": 41.92942 },
       { "lng": -87.6762, "lat": 41.92142 }
     ],
-    "name": "House    District 40",
+    "name": "House District  40",
     "slug": "house-district-40",
     "person": {
       "id": 35969,
@@ -6309,7 +6309,7 @@
       { "lng": -88.18557, "lat": 41.68092 },
       { "lng": -88.1793, "lat": 41.68064 }
     ],
-    "name": "House    District 41",
+    "name": "House District  41",
     "slug": "house-district-41",
     "person": {
       "id": 35970,
@@ -6497,7 +6497,7 @@
       { "lng": -88.11006, "lat": 41.78249 },
       { "lng": -88.10977, "lat": 41.77909 }
     ],
-    "name": "House    District 42",
+    "name": "House District  42",
     "slug": "house-district-42",
     "person": {
       "id": 35978,
@@ -6717,7 +6717,7 @@
       { "lng": -88.32654, "lat": 42.0072 },
       { "lng": -88.32094, "lat": 42.00676 }
     ],
-    "name": "House    District 43",
+    "name": "House District  43",
     "slug": "house-district-43",
     "person": {
       "id": 35973,
@@ -6817,7 +6817,7 @@
       { "lng": -88.15987, "lat": 41.98934 },
       { "lng": -88.15988, "lat": 41.98792 }
     ],
-    "name": "House    District 44",
+    "name": "House District  44",
     "slug": "house-district-44",
     "person": {
       "id": 35974,
@@ -6982,7 +6982,7 @@
       { "lng": -87.99395, "lat": 41.77329 },
       { "lng": -87.97453, "lat": 41.77366 }
     ],
-    "name": "House    District 45",
+    "name": "House District  45",
     "slug": "house-district-45",
     "person": {
       "id": 68847,
@@ -7180,7 +7180,7 @@
       { "lng": -87.99199, "lat": 41.84594 },
       { "lng": -87.99155, "lat": 41.84498 }
     ],
-    "name": "House    District 46",
+    "name": "House District  46",
     "slug": "house-district-46",
     "person": {
       "id": 68802,
@@ -7529,7 +7529,7 @@
       { "lng": -88.18034, "lat": 41.78606 },
       { "lng": -88.17742, "lat": 41.78405 }
     ],
-    "name": "House    District 47",
+    "name": "House District  47",
     "slug": "house-district-47",
     "person": {
       "id": 49986,
@@ -7736,7 +7736,7 @@
       { "lng": -88.15446, "lat": 41.92322 },
       { "lng": -88.1517, "lat": 41.92307 }
     ],
-    "name": "House    District 48",
+    "name": "House District  48",
     "slug": "house-district-48",
     "person": {
       "id": 68859,
@@ -8132,7 +8132,7 @@
       { "lng": -88.24069, "lat": 41.78216 },
       { "lng": -88.2411, "lat": 41.77548 }
     ],
-    "name": "House    District 49",
+    "name": "House District  49",
     "slug": "house-district-49",
     "person": {
       "id": 35979,
@@ -8280,7 +8280,7 @@
       { "lng": -88.30078, "lat": 41.73816 },
       { "lng": -88.30073, "lat": 41.7358 }
     ],
-    "name": "House    District 50",
+    "name": "House District  50",
     "slug": "house-district-50",
     "person": {
       "id": 36017,
@@ -8476,7 +8476,7 @@
       { "lng": -88.07936, "lat": 42.06596 },
       { "lng": -88.07947, "lat": 42.06421 }
     ],
-    "name": "House    District 51",
+    "name": "House District  51",
     "slug": "house-district-51",
     "person": {
       "id": 68864,
@@ -8808,7 +8808,7 @@
       { "lng": -88.23819, "lat": 42.06699 },
       { "lng": -88.23513, "lat": 42.06693 }
     ],
-    "name": "House    District 52",
+    "name": "House District  52",
     "slug": "house-district-52",
     "person": {
       "id": 35983,
@@ -8923,7 +8923,7 @@
       { "lng": -87.97268, "lat": 42.03465 },
       { "lng": -87.95994, "lat": 42.02516 }
     ],
-    "name": "House    District 53",
+    "name": "House District  53",
     "slug": "house-district-53",
     "person": {
       "id": 35984,
@@ -9069,7 +9069,7 @@
       { "lng": -87.95952, "lat": 42.07365 },
       { "lng": -87.94663, "lat": 42.0679 }
     ],
-    "name": "House    District 54",
+    "name": "House District  54",
     "slug": "house-district-54",
     "person": {
       "id": 68805,
@@ -9225,7 +9225,7 @@
       { "lng": -87.84653, "lat": 41.98786 },
       { "lng": -87.8465, "lat": 41.97542 }
     ],
-    "name": "House    District 55",
+    "name": "House District  55",
     "slug": "house-district-55",
     "person": {
       "id": 35986,
@@ -9429,7 +9429,7 @@
       { "lng": -88.158, "lat": 41.97374 },
       { "lng": -88.1581, "lat": 41.96657 }
     ],
-    "name": "House    District 56",
+    "name": "House District  56",
     "slug": "house-district-56",
     "person": {
       "id": 35987,
@@ -9707,7 +9707,7 @@
       { "lng": -87.90773, "lat": 42.06611 },
       { "lng": -87.86728, "lat": 42.0659 }
     ],
-    "name": "House    District 57",
+    "name": "House District  57",
     "slug": "house-district-57",
     "person": {
       "id": 45065,
@@ -10223,7 +10223,7 @@
       { "lng": -87.76667, "lat": 42.13486 },
       { "lng": -87.76427, "lat": 42.13201 }
     ],
-    "name": "House    District 58",
+    "name": "House District  58",
     "slug": "house-district-58",
     "person": {
       "id": 35989,
@@ -10491,7 +10491,7 @@
       { "lng": -87.92842, "lat": 42.13932 },
       { "lng": -87.92481, "lat": 42.13112 }
     ],
-    "name": "House    District 59",
+    "name": "House District  59",
     "slug": "house-district-59",
     "person": {
       "id": 49995,
@@ -10727,7 +10727,7 @@
       { "lng": -87.89692, "lat": 42.28001 },
       { "lng": -87.89383, "lat": 42.28002 }
     ],
-    "name": "House    District 60",
+    "name": "House District  60",
     "slug": "house-district-60",
     "person": {
       "id": 35991,
@@ -10997,7 +10997,7 @@
       { "lng": -87.99792, "lat": 42.3423 },
       { "lng": -87.99791, "lat": 42.34002 }
     ],
-    "name": "House    District 61",
+    "name": "House District  61",
     "slug": "house-district-61",
     "person": {
       "id": 49976,
@@ -11316,7 +11316,7 @@
       { "lng": -87.95115, "lat": 42.26371 },
       { "lng": -87.95026, "lat": 42.26359 }
     ],
-    "name": "House    District 62",
+    "name": "House District  62",
     "slug": "house-district-62",
     "person": {
       "id": 68821,
@@ -11528,7 +11528,7 @@
       { "lng": -88.5111, "lat": 42.25512 },
       { "lng": -88.51599, "lat": 42.25514 }
     ],
-    "name": "House    District 63",
+    "name": "House District  63",
     "slug": "house-district-63",
     "person": {
       "id": 39692,
@@ -11838,7 +11838,7 @@
       { "lng": -88.34528, "lat": 42.37152 },
       { "lng": -88.34569, "lat": 42.3278 }
     ],
-    "name": "House    District 64",
+    "name": "House District  64",
     "slug": "house-district-64",
     "person": {
       "id": 49982,
@@ -12024,7 +12024,7 @@
       { "lng": -88.3754, "lat": 41.87198 },
       { "lng": -88.37555, "lat": 41.86542 }
     ],
-    "name": "House    District 65",
+    "name": "House District  65",
     "slug": "house-district-65",
     "person": {
       "id": 35997,
@@ -12242,7 +12242,7 @@
       { "lng": -88.36052, "lat": 42.01283 },
       { "lng": -88.36044, "lat": 42.00808 }
     ],
-    "name": "House    District 66",
+    "name": "House District  66",
     "slug": "house-district-66",
     "person": {
       "id": 39693,
@@ -12517,7 +12517,7 @@
       { "lng": -89.02383, "lat": 42.16588 },
       { "lng": -89.02342, "lat": 42.16589 }
     ],
-    "name": "House    District 67",
+    "name": "House District  67",
     "slug": "house-district-67",
     "person": {
       "id": 49990,
@@ -12818,7 +12818,7 @@
       { "lng": -89.05765, "lat": 42.23802 },
       { "lng": -89.05762, "lat": 42.23258 }
     ],
-    "name": "House    District 68",
+    "name": "House District  68",
     "slug": "house-district-68",
     "person": {
       "id": 36000,
@@ -13113,7 +13113,7 @@
       { "lng": -88.51126, "lat": 42.32748 },
       { "lng": -88.45442, "lat": 42.3273 }
     ],
-    "name": "House    District 69",
+    "name": "House District  69",
     "slug": "house-district-69",
     "person": {
       "id": 36001,
@@ -13283,7 +13283,7 @@
       { "lng": -88.71323, "lat": 41.67583 },
       { "lng": -88.71254, "lat": 41.63776 }
     ],
-    "name": "House    District 70",
+    "name": "House District  70",
     "slug": "house-district-70",
     "person": {
       "id": 49898,
@@ -13506,7 +13506,7 @@
       { "lng": -90.69983, "lat": 40.44784 },
       { "lng": -90.69185, "lat": 40.44771 }
     ],
-    "name": "House    District 71",
+    "name": "House District  71",
     "slug": "house-district-71",
     "person": {
       "id": 39697,
@@ -13662,7 +13662,7 @@
       { "lng": -90.62897, "lat": 41.41503 },
       { "lng": -90.56893, "lat": 41.41384 }
     ],
-    "name": "House    District 72",
+    "name": "House District  72",
     "slug": "house-district-72",
     "person": {
       "id": 68841,
@@ -14203,7 +14203,7 @@
       { "lng": -89.555, "lat": 40.74764 },
       { "lng": -89.51266, "lat": 40.74758 }
     ],
-    "name": "House    District 73",
+    "name": "House District  73",
     "slug": "house-district-73",
     "person": {
       "id": 39696,
@@ -14474,7 +14474,7 @@
       { "lng": -89.16654, "lat": 41.49584 },
       { "lng": -89.16605, "lat": 41.45426 }
     ],
-    "name": "House    District 74",
+    "name": "House District  74",
     "slug": "house-district-74",
     "person": {
       "id": 68824,
@@ -14815,7 +14815,7 @@
       { "lng": -88.59029, "lat": 41.30916 },
       { "lng": -88.59004, "lat": 41.30347 }
     ],
-    "name": "House    District 75",
+    "name": "House District  75",
     "slug": "house-district-75",
     "person": {
       "id": 68815,
@@ -15082,7 +15082,7 @@
       { "lng": -89.02905, "lat": 41.19248 },
       { "lng": -89.02818, "lat": 41.19235 }
     ],
-    "name": "House    District 76",
+    "name": "House District  76",
     "slug": "house-district-76",
     "person": {
       "id": 49979,
@@ -15263,7 +15263,7 @@
       { "lng": -87.85942, "lat": 41.89402 },
       { "lng": -87.84432, "lat": 41.89077 }
     ],
-    "name": "House    District 77",
+    "name": "House District  77",
     "slug": "house-district-77",
     "person": {
       "id": 68833,
@@ -15362,7 +15362,7 @@
       { "lng": -87.8044, "lat": 41.87048 },
       { "lng": -87.80353, "lat": 41.87047 }
     ],
-    "name": "House    District 78",
+    "name": "House District  78",
     "slug": "house-district-78",
     "person": {
       "id": 36011,
@@ -15666,7 +15666,7 @@
       { "lng": -88.26004, "lat": 41.11406 },
       { "lng": -88.2515, "lat": 41.11422 }
     ],
-    "name": "House    District 79",
+    "name": "House District  79",
     "slug": "house-district-79",
     "person": {
       "id": 39700,
@@ -15895,7 +15895,7 @@
       { "lng": -88.20782, "lat": 41.26228 },
       { "lng": -88.20778, "lat": 41.26095 }
     ],
-    "name": "House    District 80",
+    "name": "House District  80",
     "slug": "house-district-80",
     "person": {
       "id": 36013,
@@ -16045,7 +16045,7 @@
       { "lng": -88.03102, "lat": 41.75076 },
       { "lng": -88.02992, "lat": 41.71582 }
     ],
-    "name": "House    District 81",
+    "name": "House District  81",
     "slug": "house-district-81",
     "person": {
       "id": 49970,
@@ -16222,7 +16222,7 @@
       { "lng": -87.94457, "lat": 41.637 },
       { "lng": -87.94457, "lat": 41.6361 }
     ],
-    "name": "House    District 82",
+    "name": "House District  82",
     "slug": "house-district-82",
     "person": {
       "id": 68980,
@@ -16545,7 +16545,7 @@
       { "lng": -88.41622, "lat": 41.67722 },
       { "lng": -88.41963, "lat": 41.67541 }
     ],
-    "name": "House    District 83",
+    "name": "House District  83",
     "slug": "house-district-83",
     "person": {
       "id": 68829,
@@ -16699,7 +16699,7 @@
       { "lng": -88.31422, "lat": 41.69755 },
       { "lng": -88.31406, "lat": 41.69187 }
     ],
-    "name": "House    District 84",
+    "name": "House District  84",
     "slug": "house-district-84",
     "person": {
       "id": 36018,
@@ -16872,7 +16872,7 @@
       { "lng": -88.04366, "lat": 41.54111 },
       { "lng": -88.04125, "lat": 41.54197 }
     ],
-    "name": "House    District 85",
+    "name": "House District  85",
     "slug": "house-district-85",
     "person": {
       "id": 36019,
@@ -16947,7 +16947,7 @@
       { "lng": -88.24631, "lat": 41.26753 },
       { "lng": -88.24392, "lat": 41.26697 }
     ],
-    "name": "House    District 86",
+    "name": "House District  86",
     "slug": "house-district-86",
     "person": {
       "id": 36020,
@@ -17386,7 +17386,7 @@
       { "lng": -89.32971, "lat": 39.76376 },
       { "lng": -89.3287, "lat": 39.76354 }
     ],
-    "name": "House    District 87",
+    "name": "House District  87",
     "slug": "house-district-87",
     "person": {
       "id": 68831,
@@ -17698,7 +17698,7 @@
       { "lng": -88.97311, "lat": 39.8035 },
       { "lng": -88.97656, "lat": 39.79063 }
     ],
-    "name": "House    District 88",
+    "name": "House District  88",
     "slug": "house-district-88",
     "person": {
       "id": 49984,
@@ -18300,7 +18300,7 @@
       { "lng": -90.16189, "lat": 42.11378 },
       { "lng": -90.16133, "lat": 42.10972 }
     ],
-    "name": "House    District 89",
+    "name": "House District  89",
     "slug": "house-district-89",
     "person": {
       "id": 39694,
@@ -18486,7 +18486,7 @@
       { "lng": -89.63139, "lat": 42.25847 },
       { "lng": -89.631, "lat": 42.24931 }
     ],
-    "name": "House    District 90",
+    "name": "House District  90",
     "slug": "house-district-90",
     "person": {
       "id": 68804,
@@ -18847,7 +18847,7 @@
       { "lng": -89.02751, "lat": 40.45874 },
       { "lng": -89.00601, "lat": 40.45893 }
     ],
-    "name": "House    District 91",
+    "name": "House District  91",
     "slug": "house-district-91",
     "person": {
       "id": 68808,
@@ -19081,7 +19081,7 @@
       { "lng": -89.66141, "lat": 40.65131 },
       { "lng": -89.66077, "lat": 40.65114 }
     ],
-    "name": "House    District 92",
+    "name": "House District  92",
     "slug": "house-district-92",
     "person": {
       "id": 49896,
@@ -19486,7 +19486,7 @@
       { "lng": -89.91836, "lat": 40.43789 },
       { "lng": -89.92468, "lat": 40.43592 }
     ],
-    "name": "House    District 93",
+    "name": "House District  93",
     "slug": "house-district-93",
     "person": {
       "id": 68868,
@@ -21415,7 +21415,7 @@
       { "lng": -90.35053, "lat": 40.12505 },
       { "lng": -90.35453, "lat": 40.12422 }
     ],
-    "name": "House    District 94",
+    "name": "House District  94",
     "slug": "house-district-94",
     "person": {
       "id": 36028,
@@ -22043,7 +22043,7 @@
       { "lng": -89.38883, "lat": 39.5675 },
       { "lng": -89.38612, "lat": 39.56717 }
     ],
-    "name": "House    District 95",
+    "name": "House District  95",
     "slug": "house-district-95",
     "person": {
       "id": 68810,
@@ -22663,7 +22663,7 @@
       { "lng": -89.42518, "lat": 39.69865 },
       { "lng": -89.40695, "lat": 39.69863 }
     ],
-    "name": "House    District 96",
+    "name": "House District  96",
     "slug": "house-district-96",
     "person": {
       "id": 36031,
@@ -22784,7 +22784,7 @@
       { "lng": -88.31391, "lat": 41.54889 },
       { "lng": -88.29408, "lat": 41.54931 }
     ],
-    "name": "House    District 97",
+    "name": "House District  97",
     "slug": "house-district-97",
     "person": {
       "id": 68800,
@@ -22961,7 +22961,7 @@
       { "lng": -88.11576, "lat": 41.5374 },
       { "lng": -88.11556, "lat": 41.53285 }
     ],
-    "name": "House    District 98",
+    "name": "House District  98",
     "slug": "house-district-98",
     "person": {
       "id": 36033,
@@ -23824,7 +23824,7 @@
       { "lng": -90.1544, "lat": 39.62899 },
       { "lng": -90.15426, "lat": 39.6216 }
     ],
-    "name": "House    District 99",
+    "name": "House District  99",
     "slug": "house-district-99",
     "person": {
       "id": 36029,
@@ -24487,7 +24487,7 @@
       { "lng": -89.93649, "lat": 38.86161 },
       { "lng": -89.93559, "lat": 38.86178 }
     ],
-    "name": "House    District 100",
+    "name": "House District  100",
     "slug": "house-district-100",
     "person": {
       "id": 35917,
@@ -25204,11 +25204,11 @@
       { "lng": -88.47035, "lat": 39.43263 },
       { "lng": -88.47085, "lat": 39.37453 }
     ],
-    "name": "House    District 101",
+    "name": "House District  101",
     "slug": "house-district-101",
     "person": {
       "id": 35767,
-      "name": "House    District    101",
+      "name": "House District  101",
       "phone": "..",
       "email": "",
       "image": "",
@@ -26566,7 +26566,7 @@
       { "lng": -87.74134, "lat": 38.56847 },
       { "lng": -87.65431, "lat": 38.56806 }
     ],
-    "name": "House    District 102",
+    "name": "House District  102",
     "slug": "house-district-102",
     "person": {
       "id": 68851,
@@ -26724,7 +26724,7 @@
       { "lng": -88.214, "lat": 40.08358 },
       { "lng": -88.21413, "lat": 40.08357 }
     ],
-    "name": "House    District 103",
+    "name": "House District  103",
     "slug": "house-district-103",
     "person": {
       "id": 35921,
@@ -27064,7 +27064,7 @@
       { "lng": -88.3255, "lat": 40.01105 },
       { "lng": -88.25955, "lat": 40.01027 }
     ],
-    "name": "House    District 104",
+    "name": "House District  104",
     "slug": "house-district-104",
     "person": {
       "id": 49893,
@@ -27447,7 +27447,7 @@
       { "lng": -88.92437, "lat": 40.5104 },
       { "lng": -88.92435, "lat": 40.50987 }
     ],
-    "name": "House    District 105",
+    "name": "House District  105",
     "slug": "house-district-105",
     "person": {
       "id": 68866,
@@ -27788,7 +27788,7 @@
       { "lng": -88.43962, "lat": 40.44241 },
       { "lng": -88.34697, "lat": 40.44226 }
     ],
-    "name": "House    District 106",
+    "name": "House District  106",
     "slug": "house-district-106",
     "person": {
       "id": 68982,
@@ -27964,7 +27964,7 @@
       { "lng": -88.80561, "lat": 39.11973 },
       { "lng": -88.80615, "lat": 39.00001 }
     ],
-    "name": "House    District 107",
+    "name": "House District  107",
     "slug": "house-district-107",
     "person": {
       "id": 39684,
@@ -29062,7 +29062,7 @@
       { "lng": -89.92357, "lat": 39.18194 },
       { "lng": -89.92306, "lat": 39.08563 }
     ],
-    "name": "House    District 108",
+    "name": "House District  108",
     "slug": "house-district-108",
     "person": {
       "id": 68857,
@@ -29954,7 +29954,7 @@
       { "lng": -89.19647, "lat": 38.30186 },
       { "lng": -89.14627, "lat": 38.30054 }
     ],
-    "name": "House    District 109",
+    "name": "House District  109",
     "slug": "house-district-109",
     "person": {
       "id": 35926,
@@ -30687,7 +30687,7 @@
       { "lng": -89.47914, "lat": 38.60947 },
       { "lng": -89.4796, "lat": 38.56195 }
     ],
-    "name": "House    District 110",
+    "name": "House District  110",
     "slug": "house-district-110",
     "person": {
       "id": 35925,
@@ -30993,7 +30993,7 @@
       { "lng": -90.17731, "lat": 38.68916 },
       { "lng": -90.17509, "lat": 38.68859 }
     ],
-    "name": "House    District 111",
+    "name": "House District  111",
     "slug": "house-district-111",
     "person": {
       "id": 45063,
@@ -31361,7 +31361,7 @@
       { "lng": -89.943, "lat": 38.57048 },
       { "lng": -89.93834, "lat": 38.57059 }
     ],
-    "name": "House    District 112",
+    "name": "House District  112",
     "slug": "house-district-112",
     "person": {
       "id": 39685,
@@ -31709,7 +31709,7 @@
       { "lng": -89.98327, "lat": 38.45372 },
       { "lng": -89.98327, "lat": 38.45357 }
     ],
-    "name": "House    District 113",
+    "name": "House District  113",
     "slug": "house-district-113",
     "person": {
       "id": 35932,
@@ -32158,7 +32158,7 @@
       { "lng": -89.78929, "lat": 38.30672 },
       { "lng": -89.76543, "lat": 38.30618 }
     ],
-    "name": "House    District 114",
+    "name": "House District  114",
     "slug": "house-district-114",
     "person": {
       "id": 68861,
@@ -33180,7 +33180,7 @@
       { "lng": -89.33961, "lat": 37.68743 },
       { "lng": -89.3236, "lat": 37.68719 }
     ],
-    "name": "House    District 115",
+    "name": "House District  115",
     "slug": "house-district-115",
     "person": {
       "id": 35935,
@@ -34366,7 +34366,7 @@
       { "lng": -89.17796, "lat": 37.95279 },
       { "lng": -89.17834, "lat": 37.95225 }
     ],
-    "name": "House    District 116",
+    "name": "House District  116",
     "slug": "house-district-116",
     "person": {
       "id": 39687,
@@ -35777,7 +35777,7 @@
       { "lng": -88.51231, "lat": 37.0655 },
       { "lng": -88.5112, "lat": 37.06535 }
     ],
-    "name": "House    District 117",
+    "name": "House District  117",
     "slug": "house-district-117",
     "person": {
       "id": 49994,
@@ -36531,7 +36531,7 @@
       { "lng": -89.17724, "lat": 36.97089 },
       { "lng": -89.17001, "lat": 36.9703 }
     ],
-    "name": "House    District 118",
+    "name": "House District  118",
     "slug": "house-district-118",
     "person": {
       "id": 35934,

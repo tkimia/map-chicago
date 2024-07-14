@@ -2,18 +2,12 @@ import useUserChoices from "@/hooks/useUserChoices";
 import { boundaries } from "@/lib/data-loader";
 import Map, {
   Marker,
-  Source,
-  Layer,
   GeolocateControl,
   FullscreenControl,
   NavigationControl,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import {
-  CHICAGO_COORDINATES,
-  DEFAULT_STYLE,
-  toLayerId,
-} from "../lib/constants";
+import { CHICAGO_COORDINATES, toLayerId } from "../lib/constants";
 import AddressSearch from "./AddressSearch";
 import useMapHoverState from "@/hooks/useMapHoverState";
 
@@ -23,6 +17,7 @@ import { ExploreScrollControl } from "./ExploreScrollControl";
 import { FeatureCard } from "./FeatureCard";
 import MainDrawer from "./Drawer";
 import { useState } from "react";
+import SourcesAndLayers from "./SourcesAndLayers";
 
 export default function MainMap() {
   const [mode, setMode] = useState<"explore" | "representatives" | null>(null);
@@ -95,37 +90,7 @@ export default function MainMap() {
           anchor="bottom"
         />
       )}
-      {boundaries.map((boundary) => (
-        <Source
-          key={boundary.id}
-          id={boundary.id}
-          type="geojson"
-          data={boundary.data}
-        >
-          {selectedBoundary === boundary && (
-            <Layer
-              source={boundary.id}
-              id={toLayerId(boundary.id)}
-              type="fill"
-              paint={{
-                "fill-outline-color": "white",
-                "fill-opacity": [
-                  "case",
-                  ["boolean", ["feature-state", "hover"], false],
-                  1,
-                  0.5,
-                ],
-                "fill-color": [
-                  "case",
-                  ["boolean", ["feature-state", "clicked"], false],
-                  "yellow",
-                  DEFAULT_STYLE.fillColor,
-                ],
-              }}
-            />
-          )}
-        </Source>
-      ))}
+      <SourcesAndLayers selectedBoundary={selectedBoundary} />
       {selectedBoundary && hoveredFeature && mousePoint && (
         <FeatureCard
           boundaryType={selectedBoundary.id}
@@ -158,7 +123,17 @@ export default function MainMap() {
         {mode === "representatives" && (
           <CardScrollControl onClickFeature={setClickedFeature} />
         )}
-        {mode === "explore" && <ExploreScrollControl />}
+        {mode === "explore" && (
+          <ExploreScrollControl
+            onClickBoundary={(id) => {
+              setValue("boundaryLayer", id);
+              if (window.innerWidth < 768) {
+                setDrawerOpen(false);
+              }
+            }}
+            activeBoundary={selectedBoundary?.id}
+          />
+        )}
       </MainDrawer>
     </Map>
   );

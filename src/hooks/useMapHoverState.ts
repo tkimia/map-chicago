@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   MapGeoJSONFeature,
   MapLayerMouseEvent,
@@ -7,8 +7,11 @@ import {
   MapStyleDataEvent,
   Point,
 } from "react-map-gl/maplibre";
+import useUserChoices from "./useUserChoices";
 
 export default function useMapHoverState() {
+  const { watch } = useUserChoices();
+
   const [hoveredFeature, setHoveredFeature] =
     useState<MapGeoJSONFeature | null>(null);
 
@@ -79,6 +82,16 @@ export default function useMapHoverState() {
     }
     setHoveredFeature(null);
   };
+
+  useEffect(() => {
+    const subscription = watch((_, { name }) => {
+      if (name === "boundaryLayer") {
+        setHoveredFeature(null);
+        _setClickedFeature(null);
+      }
+    });
+    return () => subscription.unsubscribe();
+  }, [watch]);
 
   return {
     hoveredFeature,
