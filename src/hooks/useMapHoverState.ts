@@ -19,13 +19,12 @@ export default function useMapHoverState() {
     useState<MapGeoJSONFeature | null>(null);
 
   const [point, setPoint] = useState<Point | null>(null);
-  const [clickedPoint, setClickedPoint] = useState<Point | null>(null);
 
   const setClickedFeature = (
-    map: Omit<MapRef, "getMap">,
-    feature: MapGeoJSONFeature
+    map: Omit<MapRef, "getMap"> | null,
+    feature: MapGeoJSONFeature | null
   ) => {
-    if (clickedFeature) {
+    if (map && clickedFeature?.layer) {
       map.setFeatureState(
         {
           source: clickedFeature.layer.source,
@@ -33,12 +32,11 @@ export default function useMapHoverState() {
         },
         { clicked: false }
       );
-      setClickedPoint(null);
     }
 
     _setClickedFeature(feature);
-    if (!feature.layer?.source) return;
-    map.setFeatureState(
+    if (!feature?.layer?.source) return;
+    map?.setFeatureState(
       { source: feature.layer.source, id: feature.id as string },
       { clicked: true }
     );
@@ -115,7 +113,7 @@ export default function useMapHoverState() {
     hoveredFeature,
     clickedFeature,
     mousePoint: point,
-    clickedPoint,
+
     setClickedFeature,
     events: {
       onMouseMove,
@@ -125,12 +123,10 @@ export default function useMapHoverState() {
 
         if (clickedFeature === e.features[0]) {
           _setClickedFeature(null);
-          setClickedPoint(null);
           return;
         }
 
         setClickedFeature(e.target, e.features[0]);
-        setClickedPoint(e.point);
       },
       onData: (e: MapStyleDataEvent | MapSourceDataEvent) => {
         if (e.dataType !== "source" || !e.isSourceLoaded) return;

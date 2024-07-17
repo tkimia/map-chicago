@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { cn, getTitle } from "@/lib/utils";
-import { Phone, Mail, Home, ExternalLink, Map, User } from "lucide-react";
+import { Phone, Mail, Home, ExternalLink, Map, User, X } from "lucide-react";
 import { Boundary } from "@/lib/data-loader";
 import { CSSProperties } from "react";
 import { Button } from "./ui/button";
@@ -22,6 +22,7 @@ type Props = {
   className?: string;
   variant?: "light" | "dark";
   style?: CSSProperties;
+  onClose?: () => void;
 };
 
 export function FeatureCard({
@@ -33,6 +34,7 @@ export function FeatureCard({
   variant = "light",
   style,
   isActive = false,
+  onClose,
 }: Props) {
   const title: string = getTitle(boundaryType, properties);
   let people: {
@@ -114,13 +116,23 @@ export function FeatureCard({
       )}
       style={style}
     >
-      <CardHeader>
+      <CardHeader className="relative">
         {boundaryName && (
           <CardDescription className="uppercase tracking-wider">
             {boundaryName}
           </CardDescription>
         )}
         <CardTitle>{title}</CardTitle>
+        {onClose && (
+          <Button
+            className="absolute top-1 right-2"
+            size="icon"
+            variant="secondary"
+            onClick={onClose}
+          >
+            <X />
+          </Button>
+        )}
       </CardHeader>
       <CardContent className="flex flex-col gap-y-3 w-[350px]">
         {people.map((person) => (
@@ -147,13 +159,19 @@ export function FeatureCard({
                 {person.phone && (
                   <>
                     <Phone size={16} className="col-span-1" />
-                    <p className="col-span-9">{person.phone}</p>
+                    {/* WRAP THIS IN a TAG with href tel: */}
+                    <a href={"tel:" + person.phone} className="col-span-9">
+                      {person.phone}
+                    </a>
                   </>
                 )}
                 {person.email && (
                   <>
                     <Mail size={16} className="col-span-1" />
-                    <p className="col-span-9">{person.email}</p>
+                    {/* WRAP THIS IN a TAG with href mailto: */}
+                    <a href={"mailto:" + person.email} className="col-span-9">
+                      {person.email}
+                    </a>
                   </>
                 )}
                 {person.address && (
@@ -193,7 +211,7 @@ export function FeatureCard({
           </div>
         ))}
       </CardContent>
-      <CardFooter className="flex justify-end space-x-3">
+      <CardFooter className="flex justify-center space-x-3">
         {website && (
           <a href={website} target="_blank" rel="noreferrer">
             <Button type="button" size="sm">
@@ -202,10 +220,12 @@ export function FeatureCard({
             </Button>
           </a>
         )}
-        <Button type="button" size="sm" onClick={onClick} disabled={isActive}>
-          <Map size={16} className="mr-2" />
-          Map
-        </Button>
+        {!!onClick && (
+          <Button type="button" size="sm" onClick={onClick} disabled={isActive}>
+            <Map size={16} className="mr-2" />
+            Map
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );

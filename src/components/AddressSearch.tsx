@@ -49,7 +49,7 @@ export default function AddressSearch({ className, onFindAddress }: Props) {
     <div
       ref={ref}
       id="search-address"
-      className={cn("absolute top-2 left-8 right-24 z-20 mx-14", className)}
+      className={cn("absolute top-2 left-14 right-14 z-20 ", className)}
     />
   );
 }

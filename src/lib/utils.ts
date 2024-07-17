@@ -30,3 +30,8 @@ export function getTitle(id: Boundary["id"], properties: GeoJsonProperties) {
       return properties?.name;
   }
 }
+
+// McKinzey write this function:
+function formatPhoneForHref(phone: string): string {
+  return phone.replace(/\D/g, "");
+}

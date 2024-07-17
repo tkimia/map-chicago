@@ -17,7 +17,12 @@ export default function LayerForm({ children, className }: Props) {
 
   return (
     <Form {...form}>
-      <form className={cn("h-screen", className)}>{children}</form>
+      <form
+        className={cn("h-screen", className)}
+        onSubmit={(e) => e.preventDefault()}
+      >
+        {children}
+      </form>
     </Form>
   );
 }

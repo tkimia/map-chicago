@@ -32,8 +32,13 @@ export default function MainMap() {
     mousePoint,
     setClickedFeature,
     clickedFeature,
-    clickedPoint,
   } = useMapHoverState();
+
+  const closeDrawerOnMobile = () => {
+    if (window.innerWidth < 768) {
+      setDrawerOpen(false);
+    }
+  };
 
   return (
     <Map
@@ -91,25 +96,28 @@ export default function MainMap() {
         />
       )}
       <SourcesAndLayers selectedBoundary={selectedBoundary} />
-      {selectedBoundary && hoveredFeature && mousePoint && (
-        <FeatureCard
-          boundaryType={selectedBoundary.id}
-          properties={hoveredFeature.properties}
-          className="absolute z-10 border-none"
-          style={{ left: mousePoint.x, top: mousePoint.y }}
-          variant="dark"
-        />
-      )}
-      {selectedBoundary && clickedFeature && clickedPoint && (
+      {selectedBoundary &&
+        hoveredFeature &&
+        hoveredFeature.id !== clickedFeature?.id &&
+        mousePoint && (
+          <FeatureCard
+            boundaryType={selectedBoundary.id}
+            properties={hoveredFeature.properties}
+            className="absolute z-10 border-none"
+            style={{ left: mousePoint.x, top: mousePoint.y }}
+            variant="dark"
+          />
+        )}
+      {selectedBoundary && clickedFeature && (
         <FeatureCard
           boundaryType={selectedBoundary.id}
           properties={clickedFeature.properties}
-          className="absolute z-10 pointer-events-none border-none"
-          style={{ left: clickedPoint.x, top: clickedPoint.y }}
+          className="absolute z-10 bottom-3 left-3 border-none"
+          onClose={() => setClickedFeature(null, null)}
         />
       )}
       <MainDrawer
-        className="absolute right-4 top-4"
+        className="absolute right-[10px] top-[10px]"
         title={mode === "representatives" ? "Your Representatives" : "Explore"}
         description={
           mode === "representatives"
@@ -121,15 +129,18 @@ export default function MainMap() {
         disabled={mode === null}
       >
         {mode === "representatives" && (
-          <CardScrollControl onClickFeature={setClickedFeature} />
+          <CardScrollControl
+            onClickFeature={(map, feature) => {
+              setClickedFeature(map, feature);
+              closeDrawerOnMobile();
+            }}
+          />
         )}
         {mode === "explore" && (
           <ExploreScrollControl
             onClickBoundary={(id) => {
               setValue("boundaryLayer", id);
-              if (window.innerWidth < 768) {
-                setDrawerOpen(false);
-              }
+              closeDrawerOnMobile();
             }}
             activeBoundary={selectedBoundary?.id}
           />

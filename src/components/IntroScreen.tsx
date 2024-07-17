@@ -14,12 +14,12 @@ type Props = {
 // a semi-transparent overlay on the map
 export default function IntroScreen({ onExplore }: Props) {
   return (
-    <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center z-10">
+    <div className="absolute inset-0 backdrop-blur-lg flex items-center justify-center z-10">
       {/* a card centered in its parent */}
       <Card className=" bg-white w-[350px] ">
         <CardHeader>
-          <CardTitle>Map Your Districts</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-center">Map Your Districts</CardTitle>
+          <CardDescription className="text-center">
             See your representatives from districts around the city.
           </CardDescription>
         </CardHeader>
