@@ -141,7 +141,13 @@ export function FeatureCard({
             className="flex flex-row justify-center items-center gap-4"
           >
             <Avatar className="h-16 w-16">
-              <AvatarImage src={person.image} className="object-cover" />
+              <AvatarImage
+                src={person.image}
+                className="object-cover"
+                alt={`Image of ${
+                  person.name ?? person.title ?? "Representative"
+                }`}
+              />
               <AvatarFallback className="text-black">
                 <User />
               </AvatarFallback>

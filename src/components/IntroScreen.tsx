@@ -28,7 +28,9 @@ export default function IntroScreen({ onExplore }: Props) {
             Enter your address above, use your location
           </p>
           <p className="text-sm font-medium">or</p>
-          <Button onClick={onExplore}>Explore</Button>
+          <Button onClick={onExplore} tabIndex={2}>
+            Explore
+          </Button>
         </CardContent>
       </Card>
     </div>

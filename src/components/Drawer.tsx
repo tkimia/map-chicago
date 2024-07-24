@@ -23,6 +23,7 @@ export default function MainDrawer(props: Props) {
           props.className
         )}
         disabled={props.disabled}
+        aria-label="Open drawer"
       >
         <ChevronsLeft />
       </Drawer.Trigger>
@@ -39,7 +40,10 @@ export default function MainDrawer(props: Props) {
                 </p>
               )}
             </div>
-            <Drawer.Close className="bg-white border-slate-300 border rounded p-1">
+            <Drawer.Close
+              className="bg-white border-slate-300 border rounded p-1"
+              aria-label="Close drawer"
+            >
               <ChevronsRight />
             </Drawer.Close>
           </div>

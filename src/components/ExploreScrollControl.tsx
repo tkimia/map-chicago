@@ -28,6 +28,12 @@ export function ExploreScrollControl({
             "cursor-pointer w-full transition-colors duration-200 ease-in-out max-w-md text-wrap"
           )}
           onClick={() => onClickBoundary(id)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              onClickBoundary(id);
+            }
+          }}
+          tabIndex={0}
         >
           <CardHeader>
             <CardTitle>{name}</CardTitle>

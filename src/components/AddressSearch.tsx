@@ -26,12 +26,13 @@ export default function AddressSearch({ className, onFindAddress }: Props) {
 
   useEffect(() => {
     if (!ref.current?.children.length) {
-      Radar.ui.autocomplete({
+      const ui = Radar.ui.autocomplete({
         container: "search-address",
         near: {
           latitude: CHICAGO_COORDINATES[0],
           longitude: CHICAGO_COORDINATES[1],
         },
+        minCharacters: 3,
         onSelection(selection: RadarAddress) {
           map?.flyTo({ center: [selection.longitude, selection.latitude] });
           setValue("userAddress", {
@@ -42,6 +43,7 @@ export default function AddressSearch({ className, onFindAddress }: Props) {
           onFindAddress();
         },
       });
+      ui.inputField.tabIndex = 1;
     }
   }, [setValue, map, onFindAddress]);
 
@@ -49,7 +51,7 @@ export default function AddressSearch({ className, onFindAddress }: Props) {
     <div
       ref={ref}
       id="search-address"
-      className={cn("absolute top-2 left-14 right-14 z-20 ", className)}
+      className={cn("absolute top-2 left-14 right-14 z-20", className)}
     />
   );
 }
